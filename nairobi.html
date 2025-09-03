@@ -1,0 +1,475 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Nairobi - Cleaning Services
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+    font-family: "Inter", sans-serif;
+   }
+  </style>
+ </head>
+ <body class="flex flex-col min-h-screen bg-gradient-to-tr from-yellow-200 via-green-200 to-blue-300">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 py-3 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white">
+   <div class="flex items-center space-x-3">
+    <img alt="Nairobi Cleaning Services logo, white text on dark blue background" class="rounded" height="40" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="40"/>
+    <span class="font-semibold text-lg select-none">
+     Nairobi Cleaning
+    </span>
+   </div>
+   <ul class="hidden md:flex space-x-6 text-sm font-semibold select-none">
+    <li>
+     <a class="hover:underline" href="#">
+      Home
+     </a>
+    </li>
+    <li>
+     <a class="hover:underline" href="#">
+      Services
+     </a>
+    </li>
+    <li>
+     <a class="hover:underline" href="#">
+      About Us
+     </a>
+    </li>
+    <li>
+     <a class="hover:underline" href="#">
+      Contact
+     </a>
+    </li>
+    <li>
+     <a class="hover:underline" href="#">
+      Blog
+     </a>
+    </li>
+   </ul>
+  </nav>
+  <!-- Ads Section with Auto Slide -->
+  <section class="max-w-6xl mx-auto px-6 py-8">
+   <h2 class="text-3xl font-bold text-gray-900 mb-6 select-none text-center">
+    Sponsored Ads
+   </h2>
+   <div class="relative overflow-hidden rounded-lg shadow-lg">
+    <div class="flex transition-transform duration-700 ease-in-out" id="ads-container" style="width: 400%">
+     <a class="flex-shrink-0 w-full flex items-center justify-center bg-blue-500 text-white text-xl font-semibold h-48" href="#">
+      <img alt="Ad 1 - Cleaning product" class="h-32 object-contain" height="150" src="https://storage.googleapis.com/a1aa/image/53f7eac4-3346-4754-7b8f-abf9f29453de.jpg" width="300"/>
+     </a>
+     <a class="flex-shrink-0 w-full flex items-center justify-center bg-green-500 text-white text-xl font-semibold h-48" href="#">
+      <img alt="Ad 2 - Cleaning service discount" class="h-32 object-contain" height="150" src="https://storage.googleapis.com/a1aa/image/81830740-270c-4bd1-b2b1-c4c687f4d41e.jpg" width="300"/>
+     </a>
+     <a class="flex-shrink-0 w-full flex items-center justify-center bg-yellow-400 text-gray-900 text-xl font-semibold h-48" href="#">
+      <img alt="Ad 3 - Eco-friendly cleaning supplies" class="h-32 object-contain" height="150" src="https://storage.googleapis.com/a1aa/image/d58367c8-33b9-4fe8-91a0-65276accac23.jpg" width="300"/>
+     </a>
+     <a class="flex-shrink-0 w-full flex items-center justify-center bg-purple-600 text-white text-xl font-semibold h-48" href="#">
+      <img alt="Ad 4 - Professional cleaning team" class="h-32 object-contain" height="150" src="https://storage.googleapis.com/a1aa/image/a3f0ced0-22cd-4a42-c854-b8d80ee91333.jpg" width="300"/>
+     </a>
+    </div>
+    <!-- Navigation dots -->
+    <div class="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex space-x-3" id="dots">
+     <button aria-label="Slide 1" class="w-3 h-3 rounded-full bg-gray-400" data-index="0">
+     </button>
+     <button aria-label="Slide 2" class="w-3 h-3 rounded-full bg-gray-400" data-index="1">
+     </button>
+     <button aria-label="Slide 3" class="w-3 h-3 rounded-full bg-gray-400" data-index="2">
+     </button>
+     <button aria-label="Slide 4" class="w-3 h-3 rounded-full bg-gray-400" data-index="3">
+     </button>
+    </div>
+   </div>
+  </section>
+  <!-- Hero Section -->
+  <section class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10">
+   <div class="flex-1 text-center md:text-left">
+    <h1 class="text-4xl font-bold text-gray-900 mb-6 select-none">
+     Reliable Cleaning Services in Nairobi
+    </h1>
+    <p class="text-gray-700 mb-8 max-w-md">
+     Professional, trustworthy, and affordable cleaning services tailored to
+     your needs. Let us make your space shine!
+    </p>
+    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+     <button class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded shadow transition select-none">
+      Book Now
+     </button>
+     <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded shadow transition select-none">
+      Our Services
+     </button>
+     <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold py-2 px-6 rounded shadow transition select-none">
+      Contact Us
+     </button>
+    </div>
+   </div>
+   <div class="flex-1 max-w-md w-full">
+    <img alt="Nairobi woman offering cleaning services, smiling and holding cleaning tools" class="rounded-lg shadow-lg w-full object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/5d68d879-a8db-4621-803b-47cb1da1c237.jpg" width="600"/>
+   </div>
+  </section>
+  <!-- Categories Section -->
+  <section class="flex-grow flex flex-col items-center justify-center px-4 py-12 max-w-6xl mx-auto w-full" style="
+    background: radial-gradient(
+     circle at top left,
+     #ff4d4d,
+     #fca26b 40%,
+     #3b44f6 60%,
+     #7fffbf 90%,
+     #ffff7f 100%
+    );
+   ">
+   <h2 class="text-white font-bold text-2xl mb-8 select-none">
+    Cleaning Service Categories
+   </h2>
+   <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 w-full">
+    <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="#">
+     <img alt="Woman cleaning a house interior" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/dfe7b658-8285-40f5-a7a5-d752d4fcedb0.jpg" width="80"/>
+     <span class="text-white font-semibold">
+      House Cleaning
+     </span>
+    </a>
+    <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="#">
+     <img alt="Office cleaning with vacuum cleaner" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/84e7e69a-425f-42b1-d5d0-91d4ebc05f75.jpg" width="80"/>
+     <span class="text-white font-semibold">
+      Office Cleaning
+     </span>
+    </a>
+    <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="#">
+     <img alt="Carpet cleaning with brush" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/0d838c69-5cca-41bd-0a12-ce00ec7a9b4a.jpg" width="80"/>
+     <span class="text-white font-semibold">
+      Carpet Cleaning
+     </span>
+    </a>
+    <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="#">
+     <img alt="Window cleaning with squeegee" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/7368237a-d9c0-4d6a-36d0-b6e0b7da3252.jpg" width="80"/>
+     <span class="text-white font-semibold">
+      Window Cleaning
+     </span>
+    </a>
+    <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="#">
+     <img alt="Deep cleaning with gloves and spray" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/2fd48ea9-81e6-4873-a8d4-b4260f545278.jpg" width="80"/>
+     <span class="text-white font-semibold">
+      Deep Cleaning
+     </span>
+    </a>
+    <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="#">
+     <img alt="Post construction cleaning with broom" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/64f7fd81-fbba-4f8a-baf2-ce570f58ac1f.jpg" width="80"/>
+     <span class="text-white font-semibold">
+      Post Construction
+     </span>
+    </a>
+    <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="#">
+     <img alt="Move in/out cleaning with mop" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/86199f60-ad0e-4660-a027-02d8cf6ad183.jpg" width="80"/>
+     <span class="text-white font-semibold">
+      Move In/Out
+     </span>
+    </a>
+    <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="#">
+     <img alt="Sanitization and disinfection services" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/b0fe3781-69cc-441f-fe86-b48fb2d6bf72.jpg" width="80"/>
+     <span class="text-white font-semibold">
+      Sanitization
+     </span>
+    </a>
+   </div>
+  </section>
+  <!-- Images & Details Section -->
+  <section class="max-w-7xl mx-auto px-6 py-12">
+   <h2 class="text-3xl font-bold text-gray-900 mb-10 select-none text-center">
+    Meet Our Nairobi Cleaning Women
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8" id="cleaners-grid">
+    <!-- Cards inserted by JS -->
+   </div>
+  </section>
+  <!-- Blog Section -->
+  <section class="max-w-6xl mx-auto px-6 py-12 bg-white rounded-lg shadow-lg mb-12">
+   <h2 class="text-3xl font-bold text-gray-900 mb-8 select-none text-center">
+    Latest Blog Posts
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <article class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition select-none">
+     <img alt="Tips for eco-friendly cleaning" class="w-full h-48 object-cover" src="https://storage.googleapis.com/a1aa/image/blog-eco-friendly-cleaning.jpg"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold mb-2 text-gray-900">
+       5 Tips for Eco-Friendly Cleaning at Home
+      </h3>
+      <p class="text-gray-700 mb-4">
+       Learn how to keep your home clean while protecting the environment with these simple tips.
+      </p>
+      <a class="text-blue-600 hover:underline font-semibold" href="#">
+       Read More →
+      </a>
+     </div>
+    </article>
+    <article class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition select-none">
+     <img alt="Benefits of professional cleaning" class="w-full h-48 object-cover" src="https://storage.googleapis.com/a1aa/image/blog-professional-cleaning.jpg"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold mb-2 text-gray-900">
+       Why Hire Professional Cleaning Services?
+      </h3>
+      <p class="text-gray-700 mb-4">
+       Discover the advantages of hiring experts to keep your space spotless and healthy.
+      </p>
+      <a class="text-blue-600 hover:underline font-semibold" href="#">
+       Read More →
+      </a>
+     </div>
+    </article>
+    <article class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition select-none">
+     <img alt="How to maintain a clean office" class="w-full h-48 object-cover" src="https://storage.googleapis.com/a1aa/image/blog-clean-office.jpg"/>
+     <div class="p-4">
+      <h3 class="text-xl font-semibold mb-2 text-gray-900">
+       How to Maintain a Clean and Productive Office
+      </h3>
+      <p class="text-gray-700 mb-4">
+       Tips and tricks to keep your office environment clean and boost productivity.
+      </p>
+      <a class="text-blue-600 hover:underline font-semibold" href="#">
+       Read More →
+      </a>
+     </div>
+    </article>
+   </div>
+  </section>
+  <footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-6 select-none">
+   <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+    <div class="text-xs text-center md:text-left">
+     © 2025 Nairobi Cleaning. All rights reserved.
+    </div>
+    <div class="flex space-x-6 text-sm font-semibold">
+     <a class="hover:underline" href="#">
+      Privacy Policy
+     </a>
+     <a class="hover:underline" href="#">
+      Terms of Service
+     </a>
+     <a class="hover:underline" href="#">
+      Contact Us
+     </a>
+     <a class="hover:underline" href="#">
+      About
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   // Auto slide for ads
+   const adsContainer = document.getElementById("ads-container");
+   const dots = document.querySelectorAll("#dots button");
+   let currentIndex = 0;
+   const totalSlides = dots.length;
+
+   function updateSlide(index) {
+    adsContainer.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach((dot, i) => {
+     dot.classList.toggle("bg-gray-700", i === index);
+     dot.classList.toggle("bg-gray-400", i !== index);
+    });
+    currentIndex = index;
+   }
+
+   dots.forEach((dot) => {
+    dot.addEventListener("click", () => {
+     updateSlide(parseInt(dot.dataset.index));
+     resetInterval();
+    });
+   });
+
+   function nextSlide() {
+    let nextIndex = (currentIndex + 1) % totalSlides;
+    updateSlide(nextIndex);
+   }
+
+   let slideInterval = setInterval(nextSlide, 4000);
+
+   function resetInterval() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, 4000);
+   }
+
+   updateSlide(0);
+
+   // Data for 20 cleaners
+   const cleaners = [
+    {
+     name: "Grace W.",
+     description:
+      "Experienced house cleaner specializing in deep cleaning and sanitization.",
+     location: "Westlands, Nairobi",
+     whatsapp: "+254700123456",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-1.jpg",
+    },
+    {
+     name: "Amina K.",
+     description:
+      "Reliable office cleaner with attention to detail and professionalism.",
+     location: "Karen, Nairobi",
+     whatsapp: "+254711234567",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-2.jpg",
+    },
+    {
+     name: "Mary N.",
+     description: "Expert in move in/out cleaning and post construction cleanup.",
+     location: "Kilimani, Nairobi",
+     whatsapp: "+254722345678",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-3.jpg",
+    },
+    {
+     name: "Jane M.",
+     description:
+      "Skilled in kitchen and bathroom cleaning with eco-friendly products.",
+     location: "Lavington, Nairobi",
+     whatsapp: "+254733456789",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-4.jpg",
+    },
+    {
+     name: "Esther L.",
+     description:
+      "Professional carpet and upholstery cleaner with modern equipment.",
+     location: "Parklands, Nairobi",
+     whatsapp: "+254744567890",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-5.jpg",
+    },
+    {
+     name: "Faith O.",
+     description:
+      "Dedicated office cleaner ensuring spotless and hygienic workspaces.",
+     location: "Upper Hill, Nairobi",
+     whatsapp: "+254755678901",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-6.jpg",
+    },
+    {
+     name: "Ruth K.",
+     description:
+      "Expert in floor cleaning and polishing for residential and commercial spaces.",
+     location: "Westlands, Nairobi",
+     whatsapp: "+254766789012",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-7.jpg",
+    },
+    {
+     name: "Lydia M.",
+     description:
+      "Specializes in bathroom cleaning and sanitization with attention to detail.",
+     location: "Kilimani, Nairobi",
+     whatsapp: "+254777890123",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-8.jpg",
+    },
+    {
+     name: "Naomi T.",
+     description: "Skilled in dusting and polishing furniture for a sparkling finish.",
+     location: "Parklands, Nairobi",
+     whatsapp: "+254788901234",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-9.jpg",
+    },
+    {
+     name: "Sarah P.",
+     description:
+      "Expert in cleaning glass surfaces and mirrors for streak-free shine.",
+     location: "Lavington, Nairobi",
+     whatsapp: "+254799012345",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-10.jpg",
+    },
+    {
+     name: "Beatrice S.",
+     description: "Specialized in kitchen appliance cleaning and maintenance.",
+     location: "Gigiri, Nairobi",
+     whatsapp: "+254700234567",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-11.jpg",
+    },
+    {
+     name: "Carol N.",
+     description: "Outdoor and patio cleaning expert for homes and businesses.",
+     location: "Karen, Nairobi",
+     whatsapp: "+254711345678",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-12.jpg",
+    },
+    {
+     name: "Diana W.",
+     description: "Upholstery and fabric cleaning specialist with gentle care.",
+     location: "Westlands, Nairobi",
+     whatsapp: "+254722456789",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-13.jpg",
+    },
+    {
+     name: "Faith M.",
+     description: "Floor cleaning and vacuuming expert for all floor types.",
+     location: "Kilimani, Nairobi",
+     whatsapp: "+254733567890",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-14.jpg",
+    },
+    {
+     name: "Jane K.",
+     description: "Specialist in cleaning blinds and curtains with care.",
+     location: "Lavington, Nairobi",
+     whatsapp: "+254744678901",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-15.jpg",
+    },
+    {
+     name: "Rose N.",
+     description: "Ceiling fan and light fixture cleaning expert.",
+     location: "Parklands, Nairobi",
+     whatsapp: "+254755789012",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-16.jpg",
+    },
+    {
+     name: "Alice M.",
+     description: "Refrigerator and kitchen appliance cleaning specialist.",
+     location: "Upper Hill, Nairobi",
+     whatsapp: "+254766890123",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-17.jpg",
+    },
+    {
+     name: "Miriam T.",
+     description: "Garden and outdoor cleaning specialist for patios and yards.",
+     location: "Karen, Nairobi",
+     whatsapp: "+254777901234",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-18.jpg",
+    },
+    {
+     name: "Janet K.",
+     description: "Wall and ceiling cleaning expert for homes and offices.",
+     location: "Kilimani, Nairobi",
+     whatsapp: "+254788012345",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-19.jpg",
+    },
+    {
+     name: "Pauline S.",
+     description: "Specialist in cleaning ceiling lights and fixtures.",
+     location: "Westlands, Nairobi",
+     whatsapp: "+254799123456",
+     image: "https://storage.googleapis.com/a1aa/image/cleaning-woman-20.jpg",
+    },
+   ];
+
+   const grid = document.getElementById("cleaners-grid");
+
+   cleaners.forEach((cleaner) => {
+    const card = document.createElement("div");
+    card.className =
+     "bg-white rounded-lg shadow-lg overflow-hidden select-none";
+
+    card.innerHTML = `
+      <img alt="Photo of ${cleaner.name}" class="w-full h-48 object-cover" src="${cleaner.image}" />
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2 text-gray-900">${cleaner.name}</h3>
+       <p class="text-gray-700 mb-2">${cleaner.description}</p>
+       <p class="text-gray-600 mb-1"><strong>Location:</strong> ${cleaner.location}</p>
+       <p class="text-gray-600 mb-4"><strong>WhatsApp:</strong> <a class="text-blue-600 hover:underline" href="https://wa.me/${cleaner.whatsapp.replace(
+         /[^\d]/g,
+         ""
+        )}">${cleaner.whatsapp}</a></p>
+       <a class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded shadow transition" href="https://wa.me/${cleaner.whatsapp.replace(
+         /[^\d]/g,
+         ""
+        )}" target="_blank" rel="noopener noreferrer">Contact on WhatsApp</a>
+      </div>
+    `;
+    grid.appendChild(card);
+   });
+  </script>
+ </body>
+</html>
