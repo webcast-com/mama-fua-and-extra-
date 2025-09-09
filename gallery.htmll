@@ -1,0 +1,455 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Cleaning Services Nairobi - Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+   rel="stylesheet"
+  />
+ </head>
+ <body class="bg-gradient-to-r from-green-200 via-cyan-200 to-blue-300 min-h-screen text-gray-900 font-sans">
+  <header class="bg-white bg-opacity-80 shadow sticky top-0 z-30">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row md:items-center md:justify-between">
+    <h1 class="text-3xl font-bold mb-3 md:mb-0">Reliable Cleaning Services Nairobi</h1>
+    <nav class="space-x-4 text-sm font-semibold">
+     <a href="index.html" class="hover:underline">Home</a>
+     <a href="#categories" class="hover:underline">Categories</a>
+     <a href="#gallery" class="hover:underline">Gallery</a>
+     <a href="contact.html" class="hover:underline">Contact</a>
+    </nav>
+   </div>
+  </header>
+
+  <section
+   id="hero"
+   class="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10"
+  >
+   <div class="md:w-1/2 max-w-lg">
+    <h2 class="text-3xl font-semibold mb-4 leading-tight">
+     Reliable Cleaning Services in Nairobi
+    </h2>
+    <p class="text-gray-800 mb-6">
+     Professional, trustworthy, and affordable cleaning services tailored to your needs. Let us make your space shine!
+    </p>
+    <div class="flex items-center space-x-3 text-sm font-semibold">
+     <a
+      href="https://wa.me/254700123456"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded shadow inline-block cursor-pointer select-none"
+      >Book Now</a
+     >
+     <a href="#categories" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded shadow inline-block cursor-pointer select-none"
+      >Our Services</a
+     >
+     <a href="#contact" class="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded shadow inline-block cursor-pointer select-none"
+      >Contact Us</a
+     >
+    </div>
+   </div>
+   <div class="md:w-1/2 max-w-sm rounded-lg shadow-lg overflow-hidden">
+    <img
+     src="https://storage.googleapis.com/a1aa/image/f778d151-bc04-47f7-9327-93d117397242.jpg"
+     alt="Smiling cleaning woman in blue shirt and yellow apron holding cleaning tools"
+     class="w-full h-auto object-cover"
+     loading="lazy"
+     width="400"
+     height="400"
+    />
+   </div>
+  </section>
+
+  <section
+   id="categories"
+   class="max-w-7xl mx-auto px-6 py-10 rounded-lg mb-16"
+   style="background: linear-gradient(90deg, #f75c5c 0%, #fca87a 25%, #6b63d6 50%, #6b63d6 60%, #a0ffb8 100%)"
+  >
+   <h3 class="text-center text-white font-semibold mb-8 text-xl">Cleaning Service Categories</h3>
+   <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+    <div
+     class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
+    >
+     <img
+      src="https://storage.googleapis.com/a1aa/image/35d1f6e9-0f68-451d-70f7-fbcbf8f974f9.jpg"
+      alt="Person cleaning a house interior"
+      class="mb-2 rounded"
+      width="80"
+      height="80"
+      loading="lazy"
+     />
+     <span class="text-white text-xs font-semibold">House Cleaning</span>
+    </div>
+    <div
+     class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
+    >
+     <img
+      src="https://storage.googleapis.com/a1aa/image/99c5f828-5b20-4d6c-9138-3b6f3e81a737.jpg"
+      alt="Person cleaning an office floor"
+      class="mb-2 rounded"
+      width="80"
+      height="80"
+      loading="lazy"
+     />
+     <span class="text-white text-xs font-semibold">Office Cleaning</span>
+    </div>
+    <div
+     class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
+    >
+     <img
+      src="https://storage.googleapis.com/a1aa/image/34f94dd5-84ed-4337-4085-f306a2396c49.jpg"
+      alt="Carpet cleaning equipment on carpet"
+      class="mb-2 rounded"
+      width="80"
+      height="80"
+      loading="lazy"
+     />
+     <span class="text-white text-xs font-semibold">Carpet Cleaning</span>
+    </div>
+    <div
+     class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
+    >
+     <img
+      src="https://storage.googleapis.com/a1aa/image/218c59c1-ce5b-4f37-0995-3c28080ccd0d.jpg"
+      alt="Window cleaning squeegee on glass"
+      class="mb-2 rounded"
+      width="80"
+      height="80"
+      loading="lazy"
+     />
+     <span class="text-white text-xs font-semibold">Window Cleaning</span>
+    </div>
+    <div
+     class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
+    >
+     <img
+      src="https://storage.googleapis.com/a1aa/image/2c6924df-c3ab-4092-9793-a9d4af4e91e1.jpg"
+      alt="Hands wearing yellow gloves cleaning surface"
+      class="mb-2 rounded"
+      width="80"
+      height="80"
+      loading="lazy"
+     />
+     <span class="text-white text-xs font-semibold">Deep Cleaning</span>
+    </div>
+    <div
+     class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
+    >
+     <img
+      src="https://storage.googleapis.com/a1aa/image/ee4968d0-4fa0-4d63-53d1-27e8f7169275.jpg"
+      alt="Post construction cleaning with broom"
+      class="mb-2 rounded"
+      width="80"
+      height="80"
+      loading="lazy"
+     />
+     <span class="text-white text-xs font-semibold">Post Construction</span>
+    </div>
+    <div
+     class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
+    >
+     <img
+      src="https://storage.googleapis.com/a1aa/image/4d6bbfe6-4dec-465d-2157-4a2f8de6f3c8.jpg"
+      alt="Person cleaning while moving in or out"
+      class="mb-2 rounded"
+      width="80"
+      height="80"
+      loading="lazy"
+     />
+     <span class="text-white text-xs font-semibold">Move In/Out</span>
+    </div>
+    <div
+     class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
+    >
+     <img
+      src="https://storage.googleapis.com/a1aa/image/9a114cd9-4eec-44b2-7400-54b1cae8153a.jpg"
+      alt="Sanitization of room with spray"
+      class="mb-2 rounded"
+      width="80"
+      height="80"
+      loading="lazy"
+     />
+     <span class="text-white text-xs font-semibold">Sanitization</span>
+    </div>
+   </div>
+  </section>
+
+  <main class="max-w-7xl mx-auto p-6">
+   <section id="gallery" class="mb-16">
+    <h2 class="text-2xl font-bold mb-6 text-center">
+     Cleaning Services Nairobi - Gallery
+    </h2>
+    <p class="text-center text-gray-700 mb-10">
+     Browse through our team of professional cleaning women and their services.
+    </p>
+    <div
+     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+     id="gallery-grid"
+    >
+     <!-- Gallery items inserted by JS -->
+    </div>
+   </section>
+  </main>
+
+  <section
+   id="contact"
+   class="bg-white bg-opacity-70 rounded-lg p-6 max-w-md mx-auto text-center shadow-lg mb-16"
+  >
+   <h3 class="text-xl font-semibold mb-4 text-gray-900">Contact &amp; Location</h3>
+   <p class="mb-2 text-gray-800 flex items-center justify-center space-x-2">
+    <i class="fas fa-map-marker-alt text-green-600"></i>
+    <span>Nairobi, Kenya</span>
+   </p>
+   <p class="mb-2 text-gray-800 flex items-center justify-center space-x-2">
+    <i class="fab fa-whatsapp text-green-600"></i>
+    <a
+     href="https://wa.me/254700123456"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="hover:underline"
+     >WhatsApp: +254 700 123 456</a
+    >
+   </p>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-300 text-center py-6 mt-12">
+   <p class="text-sm">© 2024 Reliable Cleaning Services Nairobi. All rights reserved.</p>
+  </footer>
+
+  <script>
+   const galleryGrid = document.getElementById("gallery-grid");
+
+   // Sample data for 50 images with description, location, and WhatsApp number
+   const services = [
+    {
+     name: "Grace W.",
+     description:
+      "Experienced in kitchen and house cleaning, ensuring spotless and hygienic spaces.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 700 123 456",
+     whatsappLink: "https://wa.me/254700123456",
+     img:
+      "https://storage.googleapis.com/a1aa/image/46886761-6892-4075-c362-0d7cea2a7e5a.jpg",
+     alt: "Photo of Grace W. cleaning a kitchen",
+    },
+    {
+     name: "Amina K.",
+     description:
+      "Specializes in office and floor cleaning, providing thorough and professional service.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 701 234 567",
+     whatsappLink: "https://wa.me/254701234567",
+     img:
+      "https://storage.googleapis.com/a1aa/image/755149e9-2d5f-47fd-3bda-46a19e2daacd.jpg",
+     alt: "Photo of Amina K. mopping floor",
+    },
+    {
+     name: "Mary N.",
+     description:
+      "Skilled in window and carpet cleaning, making your home bright and fresh.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 702 345 678",
+     whatsappLink: "https://wa.me/254702345678",
+     img:
+      "https://storage.googleapis.com/a1aa/image/297fe65f-a415-40d1-56ea-2e8bfa3cb934.jpg",
+     alt: "Photo of Mary N. cleaning windows",
+    },
+    {
+     name: "Jane M.",
+     description:
+      "Provides expert sanitization and deep cleaning services for a healthier environment.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 703 456 789",
+     whatsappLink: "https://wa.me/254703456789",
+     img:
+      "https://storage.googleapis.com/a1aa/image/76ebeab3-0121-435a-1438-2e28ddd9b238.jpg",
+     alt: "Photo of Jane M. sanitizing room",
+    },
+    {
+     name: "Lucy T.",
+     description:
+      "Specializes in bathroom and tile cleaning, ensuring sparkling clean bathrooms.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 704 567 890",
+     whatsappLink: "https://wa.me/254704567890",
+     img:
+      "https://storage.googleapis.com/a1aa/image/608f710e-7c2b-47e3-5a80-c26b97a1f63b.jpg",
+     alt: "Photo of Lucy T. cleaning bathroom",
+    },
+    {
+     name: "Sarah M.",
+     description: "Expert in carpet and upholstery cleaning for a fresh home.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 705 678 901",
+     whatsappLink: "https://wa.me/254705678901",
+     img:
+      "https://storage.googleapis.com/a1aa/image/5620e8a7-a4f8-4cb0-f4a2-9d1fa1d5ddbc.jpg",
+     alt: "Photo of Sarah M. vacuuming carpet",
+    },
+    {
+     name: "Jane A.",
+     description: "Provides detailed dusting and polishing services for all furniture.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 706 789 012",
+     whatsappLink: "https://wa.me/254706789012",
+     img:
+      "https://storage.googleapis.com/a1aa/image/81c3e796-5f3b-431d-ef0f-311353467a3b.jpg",
+     alt: "Photo of Jane A. dusting furniture",
+    },
+    {
+     name: "Rose K.",
+     description:
+      "Excels in kitchen cleaning and sanitization for safe food preparation areas.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 707 890 123",
+     whatsappLink: "https://wa.me/254707890123",
+     img:
+      "https://storage.googleapis.com/a1aa/image/683299f0-da75-4423-7474-1840172b66b3.jpg",
+     alt: "Photo of Rose K. cleaning kitchen counters",
+    },
+    {
+     name: "Ann W.",
+     description: "Skilled in window cleaning, leaving glass surfaces spotless and clear.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 708 901 234",
+     whatsappLink: "https://wa.me/254708901234",
+     img:
+      "https://storage.googleapis.com/a1aa/image/fc440762-5969-43f5-1531-97b68ec2ca54.jpg",
+     alt: "Photo of Ann W. cleaning windows",
+    },
+    {
+     name: "Betty N.",
+     description: "Expert floor mopping and polishing services for all floor types.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 709 012 345",
+     whatsappLink: "https://wa.me/254709012345",
+     img:
+      "https://storage.googleapis.com/a1aa/image/e6dbbc7b-b0f1-4294-7f9a-3f225e6aa3c1.jpg",
+     alt: "Photo of Betty N. mopping floor",
+    },
+    {
+     name: "Carol M.",
+     description: "Specializes in sanitization and disinfecting services for safe environments.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 710 123 456",
+     whatsappLink: "https://wa.me/254710123456",
+     img:
+      "https://storage.googleapis.com/a1aa/image/a64fe9c6-e8ac-4ac4-84aa-5850ca49c8a8.jpg",
+     alt: "Photo of Carol M. sanitizing surfaces",
+    },
+    {
+     name: "Diana P.",
+     description: "Expert in upholstery and fabric cleaning for fresh furniture.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 711 234 567",
+     whatsappLink: "https://wa.me/254711234567",
+     img:
+      "https://storage.googleapis.com/a1aa/image/657a44d9-0c4e-4c0b-5c98-e47bb44bcfae.jpg",
+     alt: "Photo of Diana P. cleaning upholstery",
+    },
+    {
+     name: "Emily S.",
+     description:
+      "Provides floor cleaning and polishing services for residential and commercial spaces.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 712 345 678",
+     whatsappLink: "https://wa.me/254712345678",
+     img:
+      "https://storage.googleapis.com/a1aa/image/5b436837-82c2-4a6a-2588-3959a915926e.jpg",
+     alt: "Photo of Emily S. cleaning floors",
+    },
+    {
+     name: "Fiona L.",
+     description:
+      "Specializes in cleaning and sanitizing kitchen appliances for hygienic cooking.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 713 456 789",
+     whatsappLink: "https://wa.me/254713456789",
+     img:
+      "https://storage.googleapis.com/a1aa/image/825b623c-3117-4e3c-455b-3b5d77bc8d95.jpg",
+     alt: "Photo of Fiona L. cleaning kitchen appliances",
+    },
+    {
+     name: "Grace L.",
+     description:
+      "Offers office cleaning services, including desk and equipment sanitization.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 714 567 890",
+     whatsappLink: "https://wa.me/254714567890",
+     img:
+      "https://storage.googleapis.com/a1aa/image/e1a5fa6c-8f2c-4688-8320-dbcc6d3134e7.jpg",
+     alt: "Photo of Grace L. cleaning office desks",
+    },
+    {
+     name: "Hannah K.",
+     description: "Experienced in floor cleaning and polishing for all types of flooring.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 715 678 901",
+     whatsappLink: "https://wa.me/254715678901",
+     img:
+      "https://storage.googleapis.com/a1aa/image/2ce758b9-9d96-492e-28fa-5168b9b5441d.jpg",
+     alt: "Photo of Hannah K. cleaning floors",
+    },
+    {
+     name: "Irene M.",
+     description:
+      "Specializes in window cleaning, leaving glass surfaces spotless and streak-free.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 716 789 012",
+     whatsappLink: "https://wa.me/254716789012",
+     img:
+      "https://storage.googleapis.com/a1aa/image/90088bd7-2fab-415f-3cc6-12e7c0bcd0f9.jpg",
+     alt: "Photo of Irene M. cleaning windows",
+    },
+    {
+     name: "Janet O.",
+     description: "Provides sanitization and disinfecting services for homes and offices.",
+     location: "Nairobi, Kenya",
+     whatsapp: "+254 717 890 123",
+     whatsappLink: "https://wa.me/254717890123",
+     img:
+      "https://storage.googleapis.com/a1aa/image/74cf9d54-3428-4f36-a51d-dabea3269224.jpg",
+     alt: "Photo of Janet O. sanitizing surfaces",
+    },
+   ];
+
+   // To reach 50 items, repeat the above 18 items multiple times with index suffixes
+   const totalItems = 50;
+   const extendedServices = [];
+   for (let i = 0; i < totalItems; i++) {
+    const base = services[i % services.length];
+    extendedServices.push({
+     name: base.name + (i >= services.length ? ` ${i + 1}` : ""),
+     description: base.description,
+     location: base.location,
+     whatsapp: base.whatsapp,
+     whatsappLink: base.whatsappLink,
+     img: base.img,
+     alt: base.alt,
+    });
+   }
+
+   extendedServices.forEach((service) => {
+    const card = document.createElement("div");
+    card.className =
+     "bg-white rounded-lg shadow p-4 flex flex-col items-center hover:shadow-lg transition";
+
+    card.innerHTML = `
+      <img src="${service.img}" alt="${service.alt}" loading="lazy" class="w-40 h-40 object-cover rounded-md mb-3" width="160" height="160" />
+      <p class="font-semibold text-center text-gray-900 mb-1">${service.name}</p>
+      <p class="text-xs text-gray-700 mb-1 text-center px-2">${service.description}</p>
+      <p class="text-xs text-gray-600 flex items-center justify-center space-x-1 mb-1">
+        <i class="fas fa-map-marker-alt text-green-600"></i>
+        <span>${service.location}</span>
+      </p>
+      <p class="text-xs text-gray-600 flex items-center justify-center space-x-1">
+        <i class="fab fa-whatsapp text-green-600"></i>
+        <a href="${service.whatsappLink}" target="_blank" rel="noopener noreferrer" class="hover:underline">${service.whatsapp}</a>
+      </p>
+    `;
+    galleryGrid.appendChild(card);
+   });
+  </script>
+ </body>
+</html>
