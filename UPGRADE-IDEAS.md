@@ -141,6 +141,39 @@ It already has some nice touches: Vercel Speed Insights, Google Tag Manager (on
 **New assets added:** `js/main.js`, `favicon.svg`, `apple-touch-icon.png`, `scripts/phase1.py`
 (safe to re-run — idempotent). **Nothing was deleted.**
 
+### ✅ Phase 2 — DONE (2026-08-05)
+
+7. **Brand clarity (kept equal — you skipped the branding pick, so I went neutral)**
+   - `index.html` now clearly labels itself: a "🎵 U&I Connection · Music & Entertainment"
+     pill at the top of the hero, a subtitle under "U&I Categories", and a clearer page
+     title. The cleaning pages already carry "Nairobi Cleaning" branding everywhere.
+   - Nothing was moved, relinked or deleted. If you decide later that one brand should
+     lead, say so and I'll flip the labels in one pass.
+
+8. **Shared nav + footer templates (single source of truth)**
+   - New `templates/` folder: `cleaning-nav`, `music-nav`, `gallery-nav`, `blog-nav`,
+     `cleaning-footer`, `simple-footer`.
+   - New `scripts/sync-nav-footer.py` — edit a template, run one command, all 11 pages
+     update. Idempotent, verified (second run changes nothing).
+   - Bonus fixes that came with the sync: the nav/footer "current page" links that were
+     dead `#` links are now real page links (e.g. About Us → `about us.html`), and every
+     classic page's current link gets `aria-current="page"`.
+   - This also repaired contact.html's pre-existing missing `</div>` in the footer.
+
+9. **Images localisation — prepared (needs one command with internet)**
+   - This sandbox cannot reach `storage.googleapis.com` (network allowlist), so the 94
+     external images couldn't be downloaded from here. Everything is staged for you:
+     - `images/manifest.json` — all 94 URLs mapped to their local filenames (so the
+       source URLs are never lost).
+     - `scripts/localize-images.py` — downloads every image into `images/`, rewrites
+       every page **and template** to use local copies, keeps `og:image`/`twitter:image`
+       absolute (social platforms need absolute URLs), and is safe to re-run.
+     - **Run once from any machine with internet:** `python3 scripts/localize-images.py`
+     - Already fixed locally: `images/12.jpg` was referenced but lived in an accidental
+       `images ` (trailing-space) folder — moved into `images/12.jpg` (the "Sleep overs"
+       card no longer 404s); `nairobi.html` used absolute `/images/jane.jpg` → now
+       relative `images/jane.jpg`.
+
 ### ⚠️ Newly noticed (pre-existing, not touched — for Phase 2/3)
 - `contact.html` footer: one `<div>` is missing its closing tag before `</footer>`.
 - `nairobi.html` (in the "Book Now / Our Services / Contact Us" area): `<button>`
