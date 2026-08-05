@@ -5,9 +5,57 @@
   <title>
    Cleaning Services Nairobi - Blog
   </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <meta content="Latest cleaning tips and news from Cleaning Services Nairobi - kitchen cleaning, carpet care and more expert advice for a sparkling home." name="description"/>
+  <meta content="Cleaning Services Nairobi - Blog" property="og:title"/>
+  <meta content="Latest cleaning tips and news from Cleaning Services Nairobi - kitchen cleaning, carpet care and more expert advice for a sparkling home." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Nairobi Cleaning" property="og:site_name"/>
+  <meta content="https://storage.googleapis.com/a1aa/image/f778d151-bc04-47f7-9327-93d117397242.jpg" property="og:image"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Cleaning Services Nairobi - Blog" name="twitter:title"/>
+  <meta content="Latest cleaning tips and news from Cleaning Services Nairobi - kitchen cleaning, carpet care and more expert advice for a sparkling home." name="twitter:description"/>
+  <meta content="https://storage.googleapis.com/a1aa/image/f778d151-bc04-47f7-9327-93d117397242.jpg" name="twitter:image"/>
+  <meta content="#0d9488" name="theme-color"/>
+  <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="manifest.json" rel="manifest"/>
+
+  <link href="css/tailwind.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <!-- LocalBusiness schema for local search -->
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nairobi Cleaning",
+    "description": "Professional, trustworthy and affordable cleaning services in Nairobi - house, office, carpet, window and deep cleaning.",
+    "image": "https://storage.googleapis.com/a1aa/image/f778d151-bc04-47f7-9327-93d117397242.jpg",
+    "telephone": "+254700123456",
+    "email": "info@reliablecleaning.co.ke",
+    "priceRange": "KES",
+    "address": {
+     "@type": "PostalAddress",
+     "addressLocality": "Nairobi",
+     "addressCountry": "KE"
+    },
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": -1.2921,
+     "longitude": 36.8219
+    },
+    "areaServed": "Nairobi",
+    "openingHoursSpecification": {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+     "opens": "08:00",
+     "closes": "18:00"
+    },
+    "sameAs": [
+     "https://www.facebook.com/reliablecleaningnairobi",
+     "https://twitter.com/cleaningnairobi"
+    ]
+   }
+  </script>
   <!-- Vercel Speed Insights -->
   <script type="module">
    import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@2.0.0/dist/index.mjs';
@@ -16,30 +64,49 @@
  </head>
  <body class="bg-gradient-to-r from-green-200 via-cyan-200 to-blue-300 min-h-screen font-sans text-gray-900 flex flex-col">
   <header class="bg-white bg-opacity-80 shadow-md sticky top-0 z-50">
-   <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between">
-    <h1 class="text-2xl font-bold mb-2 sm:mb-0">
-     Cleaning Services Nairobi Blog
-    </h1>
-    <nav class="space-x-4 text-sm font-semibold">
-     <a class="text-green-700 hover:underline" href="/index.html">
-      Home
-     </a>
-     <a aria-current="page" class="text-blue-700 underline" href="/blog">
-      Blog
-     </a>
-     <a class="text-yellow-600 hover:underline" href="contact.html">
-      Contact
-     </a>
+   <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-3">
+    <h1 class="text-2xl font-bold mb-2 sm:mb-0">Cleaning Services Nairobi Blog</h1>
+    <nav class="hidden md:block space-x-4 text-sm font-semibold">
+     <a class="text-green-700 hover:underline" href="index.html">Home</a>
+     <a aria-current="page" class="text-blue-700 underline" href="blog.html">Blog</a>
+     <a class="text-yellow-600 hover:underline" href="contact.html">Contact</a>
     </nav>
+   <button aria-expanded="false" aria-label="Toggle dark mode" class="text-gray-900 text-xl focus:outline-none ml-3" data-dark-toggle type="button">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun hidden"></i>
+   </button>
+   <button aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden text-gray-900 text-xl focus:outline-none" data-nav-toggle="#mobileMenu" type="button">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-times hidden"></i>
+   </button>
+   <div class="hidden md:hidden w-full pt-3 pb-1" data-nav-menu id="mobileMenu">
+    <a class="block py-2 text-sm font-semibold hover:underline" href="index.html">Home</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="blog.html">Blog</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="contact.html">Contact</a>
+   </div>
    </div>
   </header>
   <main class="max-w-7xl mx-auto p-6 flex-grow">
+   <!-- Search + category filter -->
+   <div class="max-w-3xl mx-auto mb-10">
+    <input class="w-full p-3 rounded-lg shadow bg-white bg-opacity-80 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500" id="blogSearch" placeholder="Search articles…" type="search"/>
+    <div class="flex flex-wrap gap-2 mt-3 justify-center">
+     <button class="bg-green-600 text-white px-4 py-1.5 rounded-full text-sm font-semibold" data-category-chip="all" type="button">All</button>
+     <button class="bg-white text-gray-700 px-4 py-1.5 rounded-full text-sm font-semibold shadow" data-category-chip="kitchen" type="button">Kitchen</button>
+     <button class="bg-white text-gray-700 px-4 py-1.5 rounded-full text-sm font-semibold shadow" data-category-chip="carpets" type="button">Carpets &amp; Upholstery</button>
+     <button class="bg-white text-gray-700 px-4 py-1.5 rounded-full text-sm font-semibold shadow" data-category-chip="windows" type="button">Windows</button>
+     <button class="bg-white text-gray-700 px-4 py-1.5 rounded-full text-sm font-semibold shadow" data-category-chip="deep-cleaning" type="button">Deep Cleaning</button>
+     <button class="bg-white text-gray-700 px-4 py-1.5 rounded-full text-sm font-semibold shadow" data-category-chip="eco-friendly" type="button">Eco-Friendly</button>
+     <button class="bg-white text-gray-700 px-4 py-1.5 rounded-full text-sm font-semibold shadow" data-category-chip="organizing" type="button">Organizing &amp; Schedules</button>
+    </div>
+    <p class="hidden text-center text-gray-700 mt-4 font-semibold" id="blogNoResults">No articles match your search — try a different word or category.</p>
+   </div>
    <section class="mb-12">
     <h2 class="text-3xl font-semibold mb-6 text-center">
      Latest Cleaning Tips &amp; News
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-     <article class="bg-white bg-opacity-80 rounded-lg shadow-md overflow-hidden flex flex-col">
+     <article data-category="kitchen" class="bg-white bg-opacity-80 rounded-lg shadow-md overflow-hidden flex flex-col">
       <img alt="Woman cleaning kitchen counter with spray bottle and cloth" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d36c2641-f7c7-4297-7c29-64667b04788a.jpg" width="600"/>
       <div class="p-4 flex flex-col flex-grow">
        <h3 class="text-xl font-semibold mb-2">
@@ -53,7 +120,7 @@
        </a>
       </div>
      </article>
-     <article class="bg-white bg-opacity-80 rounded-lg shadow-md overflow-hidden flex flex-col">
+     <article data-category="carpets" class="bg-white bg-opacity-80 rounded-lg shadow-md overflow-hidden flex flex-col">
       <img alt="Person vacuuming carpet in living room" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/6f35e6ce-91c2-439c-9b3c-a9b31326d177.jpg" width="600"/>
       <div class="p-4 flex flex-col flex-grow">
        <h3 class="text-xl font-semibold mb-2">
@@ -67,7 +134,7 @@
        </a>
       </div>
      </article>
-     <article class="bg-white bg-opacity-80 rounded-lg shadow-md overflow-hidden flex flex-col">
+     <article data-category="windows" class="bg-white bg-opacity-80 rounded-lg shadow-md overflow-hidden flex flex-col">
       <img alt="Window cleaning with squeegee on glass" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e204b957-2ab5-4a20-05ce-bd9c36520454.jpg" width="600"/>
       <div class="p-4 flex flex-col flex-grow">
        <h3 class="text-xl font-semibold mb-2">
@@ -88,7 +155,7 @@
      More Articles
     </h2>
     <ul class="space-y-6 max-w-3xl mx-auto">
-     <li class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+     <li data-category="deep-cleaning" class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
       <img alt="Deep cleaning gloves and spray bottle" class="w-32 h-20 object-cover rounded-md flex-shrink-0" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d8636ded-b552-4a99-64f0-d75829b642e8.jpg" width="320"/>
       <div>
        <h3 class="text-lg font-semibold mb-1">
@@ -99,7 +166,7 @@
        </p>
       </div>
      </li>
-     <li class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+     <li data-category="deep-cleaning" class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
       <img alt="Post construction cleaning tools and broom" class="w-32 h-20 object-cover rounded-md flex-shrink-0" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/6e2b1f3d-db4f-4368-4924-086ae1b8c1ba.jpg" width="320"/>
       <div>
        <h3 class="text-lg font-semibold mb-1">
@@ -110,7 +177,7 @@
        </p>
       </div>
      </li>
-     <li class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+     <li data-category="deep-cleaning" class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
       <img alt="Move in/out cleaning with boxes and mop" class="w-32 h-20 object-cover rounded-md flex-shrink-0" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4b630c22-4a0f-4af4-3e3c-6a3675b18c68.jpg" width="320"/>
       <div>
        <h3 class="text-lg font-semibold mb-1">
@@ -121,7 +188,7 @@
        </p>
       </div>
      </li>
-     <li class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+     <li data-category="deep-cleaning" class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
       <img alt="Sanitization spray and gloves" class="w-32 h-20 object-cover rounded-md flex-shrink-0" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/7679988a-b0ca-458c-f0e7-696738e5b109.jpg" width="320"/>
       <div>
        <h3 class="text-lg font-semibold mb-1">
@@ -132,7 +199,7 @@
        </p>
       </div>
      </li>
-     <li class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+     <li data-category="eco-friendly" class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
       <img alt="Eco-friendly cleaning products on shelf" class="w-32 h-20 object-cover rounded-md flex-shrink-0" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/eco-friendly-cleaning-products.jpg" width="320"/>
       <div>
        <h3 class="text-lg font-semibold mb-1">
@@ -143,7 +210,7 @@
        </p>
       </div>
      </li>
-     <li class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+     <li data-category="organizing" class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
       <img alt="Organized cleaning supplies in storage" class="w-32 h-20 object-cover rounded-md flex-shrink-0" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/organized-cleaning-supplies.jpg" width="320"/>
       <div>
        <h3 class="text-lg font-semibold mb-1">
@@ -154,7 +221,7 @@
        </p>
       </div>
      </li>
-     <li class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+     <li data-category="organizing" class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
       <img alt="Cleaning schedule calendar on wall" class="w-32 h-20 object-cover rounded-md flex-shrink-0" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/cleaning-schedule-calendar.jpg" width="320"/>
       <div>
        <h3 class="text-lg font-semibold mb-1">
@@ -165,7 +232,7 @@
        </p>
       </div>
      </li>
-     <li class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+     <li data-category="carpets" class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
       <img alt="Tips for removing pet hair from furniture" class="w-32 h-20 object-cover rounded-md flex-shrink-0" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/pet-hair-removal.jpg" width="320"/>
       <div>
        <h3 class="text-lg font-semibold mb-1">
@@ -176,7 +243,7 @@
        </p>
       </div>
      </li>
-     <li class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+     <li data-category="eco-friendly" class="bg-white bg-opacity-80 rounded-lg shadow-md p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
       <img alt="Natural cleaning solutions in bottles" class="w-32 h-20 object-cover rounded-md flex-shrink-0" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/natural-cleaning-solutions.jpg" width="320"/>
       <div>
        <h3 class="text-lg font-semibold mb-1">
@@ -192,8 +259,9 @@
   </main>
   <footer class="bg-gray-900 text-gray-300 text-center py-6 mt-auto">
    <p class="text-sm">
-    © 2025 Reliable Cleaning Services Nairobi. All rights reserved.
+    © <span data-year>2026</span> Reliable Cleaning Services Nairobi. All rights reserved.
    </p>
   </footer>
+   <script src="js/main.js"></script>
  </body>
 </html>

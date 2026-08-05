@@ -1,0 +1,15 @@
+{
+  "name": "Nairobi Cleaning - Professional Cleaning Services",
+  "short_name": "Nairobi Cleaning",
+  "description": "Professional, trustworthy and affordable cleaning services in Nairobi - house, office, carpet, window and deep cleaning. Book on WhatsApp.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#0d9488",
+  "theme_color": "#0d9488",
+  "icons": [
+    { "src": "images/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

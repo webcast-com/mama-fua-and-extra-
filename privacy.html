@@ -5,8 +5,22 @@
   <title>
    Nairobi Cleaning - Privacy Policy
   </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <meta content="Read the Nairobi Cleaning privacy policy to understand how we collect, use and protect your personal information." name="description"/>
+  <meta content="Nairobi Cleaning - Privacy Policy" property="og:title"/>
+  <meta content="Read the Nairobi Cleaning privacy policy to understand how we collect, use and protect your personal information." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Nairobi Cleaning" property="og:site_name"/>
+  <meta content="https://storage.googleapis.com/a1aa/image/f778d151-bc04-47f7-9327-93d117397242.jpg" property="og:image"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Nairobi Cleaning - Privacy Policy" name="twitter:title"/>
+  <meta content="Read the Nairobi Cleaning privacy policy to understand how we collect, use and protect your personal information." name="twitter:description"/>
+  <meta content="https://storage.googleapis.com/a1aa/image/f778d151-bc04-47f7-9327-93d117397242.jpg" name="twitter:image"/>
+  <meta content="#0d9488" name="theme-color"/>
+  <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="manifest.json" rel="manifest"/>
+
+  <link href="css/tailwind.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&amp;display=swap" rel="stylesheet"/>
   <style>
@@ -14,6 +28,40 @@
     font-family: "Inter", sans-serif;
    }
   </style>
+  <!-- LocalBusiness schema for local search -->
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nairobi Cleaning",
+    "description": "Professional, trustworthy and affordable cleaning services in Nairobi - house, office, carpet, window and deep cleaning.",
+    "image": "https://storage.googleapis.com/a1aa/image/f778d151-bc04-47f7-9327-93d117397242.jpg",
+    "telephone": "+254700123456",
+    "email": "info@reliablecleaning.co.ke",
+    "priceRange": "KES",
+    "address": {
+     "@type": "PostalAddress",
+     "addressLocality": "Nairobi",
+     "addressCountry": "KE"
+    },
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": -1.2921,
+     "longitude": 36.8219
+    },
+    "areaServed": "Nairobi",
+    "openingHoursSpecification": {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+     "opens": "08:00",
+     "closes": "18:00"
+    },
+    "sameAs": [
+     "https://www.facebook.com/reliablecleaningnairobi",
+     "https://twitter.com/cleaningnairobi"
+    ]
+   }
+  </script>
   <!-- Vercel Speed Insights -->
   <script type="module">
    import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@2.0.0/dist/index.mjs';
@@ -22,7 +70,7 @@
  </head>
  <body class="flex flex-col min-h-screen bg-gradient-to-tr from-yellow-200 via-green-200 to-blue-300">
   <!-- Navbar -->
-  <nav class="flex items-center justify-between px-6 py-3 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white">
+  <nav class="flex flex-wrap items-center justify-between px-6 py-3 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white">
    <div class="flex items-center space-x-3">
     <img alt="Nairobi Cleaning Services logo, white text on dark blue background" class="rounded" height="40" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="40"/>
     <span class="font-semibold text-lg select-none">
@@ -31,31 +79,36 @@
    </div>
    <ul class="hidden md:flex space-x-6 text-sm font-semibold select-none">
     <li>
-     <a class="hover:underline" href="index.html">
-      Home
-     </a>
+     <a class="hover:underline" href="index.html">Home</a>
     </li>
     <li>
-     <a class="hover:underline" href="services.html">
-      Services
-     </a>
+     <a class="hover:underline" href="services.html">Services</a>
     </li>
     <li>
-     <a class="hover:underline" href="about us.html">
-      About Us
-     </a>
+     <a class="hover:underline" href="about us.html">About Us</a>
     </li>
     <li>
-     <a class="hover:underline" href="contact.html">
-      Contact
-     </a>
+     <a class="hover:underline" href="contact.html">Contact</a>
     </li>
     <li>
-     <a class="hover:underline" href="blog.html">
-      Blog
-     </a>
+     <a class="hover:underline" href="blog.html">Blog</a>
     </li>
    </ul>
+   <button aria-expanded="false" aria-label="Toggle dark mode" class="text-white text-xl focus:outline-none ml-3" data-dark-toggle type="button">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun hidden"></i>
+   </button>
+   <button aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden text-white text-xl focus:outline-none" data-nav-toggle="#mobileMenu" type="button">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-times hidden"></i>
+   </button>
+   <div class="hidden md:hidden w-full pt-3 pb-1" data-nav-menu id="mobileMenu">
+    <a class="block py-2 text-sm font-semibold hover:underline" href="index.html">Home</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="services.html">Services</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="about us.html">About Us</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="contact.html">Contact</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="blog.html">Blog</a>
+   </div>
   </nav>
   <!-- Privacy Policy Section -->
   <section class="max-w-4xl mx-auto px-6 py-16 bg-white rounded-lg shadow-lg mt-12 mb-12">
@@ -114,23 +167,16 @@
   <footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-6 select-none mt-auto">
    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
     <div class="text-xs text-center md:text-left">
-     © 2025 Nairobi Cleaning. All rights reserved.
+     © <span data-year>2026</span> Nairobi Cleaning. All rights reserved.
     </div>
     <div class="flex space-x-6 text-sm font-semibold">
-     <a class="hover:underline" href="#">
-      Privacy Policy
-     </a>
-     <a class="hover:underline" href="services.html">
-      Terms of Service
-     </a>
-     <a class="hover:underline" href="#">
-      Contact Us
-     </a>
-     <a class="hover:underline" href="about.html">
-      About
-     </a>
+     <a class="hover:underline" href="privacy.html">Privacy Policy</a>
+     <a class="hover:underline" href="terms of services.html">Terms of Service</a>
+     <a class="hover:underline" href="contact.html">Contact Us</a>
+     <a class="hover:underline" href="about us.html">About</a>
     </div>
    </div>
   </footer>
+   <script src="js/main.js"></script>
  </body>
 </html>

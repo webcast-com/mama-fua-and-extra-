@@ -1,0 +1,25 @@
+<header class="bg-white bg-opacity-80 shadow sticky top-0 z-30">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-3">
+    <h1 class="text-3xl font-bold mb-3 md:mb-0">{{TITLE}}</h1>
+    <nav class="hidden md:block space-x-4 text-sm font-semibold">
+     <a href="index.html" class="hover:underline">Home</a>
+     <a href="#categories" class="hover:underline">Categories</a>
+     <a href="#gallery" class="hover:underline">Gallery</a>
+     <a href="contact.html" class="hover:underline">Contact</a>
+    </nav>
+   <button aria-expanded="false" aria-label="Toggle dark mode" class="text-gray-900 text-xl focus:outline-none ml-3" data-dark-toggle type="button">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun hidden"></i>
+   </button>
+   <button aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden text-gray-900 text-xl focus:outline-none" data-nav-toggle="#mobileMenu" type="button">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-times hidden"></i>
+   </button>
+   <div class="hidden md:hidden w-full pt-3 pb-1" data-nav-menu id="mobileMenu">
+    <a class="block py-2 text-sm font-semibold hover:underline" href="index.html">Home</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="#categories">Categories</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="#gallery">Gallery</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="contact.html">Contact</a>
+   </div>
+   </div>
+  </header>

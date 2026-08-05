@@ -1,0 +1,23 @@
+<header class="bg-white bg-opacity-80 shadow-md sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-3">
+    <h1 class="text-2xl font-bold mb-2 sm:mb-0">{{TITLE}}</h1>
+    <nav class="hidden md:block space-x-4 text-sm font-semibold">
+     <a class="text-green-700 hover:underline" href="index.html">Home</a>
+     <a aria-current="page" class="text-blue-700 underline" href="blog.html">Blog</a>
+     <a class="text-yellow-600 hover:underline" href="contact.html">Contact</a>
+    </nav>
+   <button aria-expanded="false" aria-label="Toggle dark mode" class="text-gray-900 text-xl focus:outline-none ml-3" data-dark-toggle type="button">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun hidden"></i>
+   </button>
+   <button aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden text-gray-900 text-xl focus:outline-none" data-nav-toggle="#mobileMenu" type="button">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-times hidden"></i>
+   </button>
+   <div class="hidden md:hidden w-full pt-3 pb-1" data-nav-menu id="mobileMenu">
+    <a class="block py-2 text-sm font-semibold hover:underline" href="index.html">Home</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="blog.html">Blog</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="contact.html">Contact</a>
+   </div>
+   </div>
+  </header>

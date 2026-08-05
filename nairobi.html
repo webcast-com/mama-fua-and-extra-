@@ -12,8 +12,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <title>
    Nairobi - Cleaning Services
   </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <meta content="Nairobi Cleaning - professional cleaning services across Nairobi: house cleaning, office cleaning, carpet cleaning and more. Book now via WhatsApp." name="description"/>
+  <meta content="Nairobi - Cleaning Services" property="og:title"/>
+  <meta content="Nairobi Cleaning - professional cleaning services across Nairobi: house cleaning, office cleaning, carpet cleaning and more. Book now via WhatsApp." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Nairobi Cleaning" property="og:site_name"/>
+  <meta content="https://storage.googleapis.com/a1aa/image/f778d151-bc04-47f7-9327-93d117397242.jpg" property="og:image"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Nairobi - Cleaning Services" name="twitter:title"/>
+  <meta content="Nairobi Cleaning - professional cleaning services across Nairobi: house cleaning, office cleaning, carpet cleaning and more. Book now via WhatsApp." name="twitter:description"/>
+  <meta content="https://storage.googleapis.com/a1aa/image/f778d151-bc04-47f7-9327-93d117397242.jpg" name="twitter:image"/>
+  <meta content="#0d9488" name="theme-color"/>
+  <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="manifest.json" rel="manifest"/>
+
+  <link href="css/tailwind.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&amp;display=swap" rel="stylesheet"/>
   <style>
@@ -21,6 +35,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     font-family: "Inter", sans-serif;
    }
   </style>
+  <!-- LocalBusiness schema for local search -->
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nairobi Cleaning",
+    "description": "Professional, trustworthy and affordable cleaning services in Nairobi - house, office, carpet, window and deep cleaning.",
+    "image": "https://storage.googleapis.com/a1aa/image/f778d151-bc04-47f7-9327-93d117397242.jpg",
+    "telephone": "+254700123456",
+    "email": "info@reliablecleaning.co.ke",
+    "priceRange": "KES",
+    "address": {
+     "@type": "PostalAddress",
+     "addressLocality": "Nairobi",
+     "addressCountry": "KE"
+    },
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": -1.2921,
+     "longitude": 36.8219
+    },
+    "areaServed": "Nairobi",
+    "openingHoursSpecification": {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+     "opens": "08:00",
+     "closes": "18:00"
+    },
+    "sameAs": [
+     "https://www.facebook.com/reliablecleaningnairobi",
+     "https://twitter.com/cleaningnairobi"
+    ]
+   }
+  </script>
   <!-- Vercel Speed Insights -->
   <script type="module">
    import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@2.0.0/dist/index.mjs';
@@ -33,7 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <!-- Navbar -->
-  <nav class="flex items-center justify-between px-6 py-3 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white">
+  <nav class="flex flex-wrap items-center justify-between px-6 py-3 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white">
    <div class="flex items-center space-x-3">
     <img alt="Nairobi Cleaning Services logo, white text on dark blue background" class="rounded" height="40" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="40"/>
     <span class="font-semibold text-lg select-none">
@@ -42,31 +90,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    </div>
    <ul class="hidden md:flex space-x-6 text-sm font-semibold select-none">
     <li>
-     <a class="hover:underline" href="index.html">
-      Home
-     </a>
+     <a class="hover:underline" href="index.html">Home</a>
     </li>
     <li>
-     <a class="hover:underline" href="services.html">
-      Services
-     </a>
+     <a class="hover:underline" href="services.html">Services</a>
     </li>
     <li>
-     <a class="hover:underline" href="about us.html">
-      About Us
-     </a>
+     <a class="hover:underline" href="about us.html">About Us</a>
     </li>
     <li>
-     <a class="hover:underline" href="contact.html">
-      Contact
-     </a>
+     <a class="hover:underline" href="contact.html">Contact</a>
     </li>
     <li>
-     <a class="hover:underline" href="blog.html">
-      Blog
-     </a>
+     <a class="hover:underline" href="blog.html">Blog</a>
     </li>
    </ul>
+   <button aria-expanded="false" aria-label="Toggle dark mode" class="text-white text-xl focus:outline-none ml-3" data-dark-toggle type="button">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun hidden"></i>
+   </button>
+   <button aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden text-white text-xl focus:outline-none" data-nav-toggle="#mobileMenu" type="button">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-times hidden"></i>
+   </button>
+   <div class="hidden md:hidden w-full pt-3 pb-1" data-nav-menu id="mobileMenu">
+    <a class="block py-2 text-sm font-semibold hover:underline" href="index.html">Home</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="services.html">Services</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="about us.html">About Us</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="contact.html">Contact</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="blog.html">Blog</a>
+   </div>
   </nav>
   <!-- Ads Section with Auto Slide -->
   <section class="max-w-6xl mx-auto px-6 py-8">
@@ -76,16 +129,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    <div class="relative overflow-hidden rounded-lg shadow-lg">
     <div class="flex transition-transform duration-700 ease-in-out" id="ads-container" style="width: 400%">
      <a class="flex-shrink-0 w-full flex items-center justify-center bg-blue-500 text-white text-xl font-semibold h-48" href="#">
-      <img alt="Ad 1 - Cleaning product" class="h-32 object-contain" height="150" src="/images/jane.jpg" width="300"/>
+      <img alt="Ad 1 - Cleaning product" class="h-32 object-contain" height="150" src="images/jane.jpg" width="300" loading="lazy"/>
      </a>
      <a class="flex-shrink-0 w-full flex items-center justify-center bg-green-500 text-white text-xl font-semibold h-48" href="#">
-      <img alt="Ad 2 - Cleaning service discount" class="h-32 object-contain" height="150" src="https://storage.googleapis.com/a1aa/image/81830740-270c-4bd1-b2b1-c4c687f4d41e.jpg" width="300"/>
+      <img alt="Ad 2 - Cleaning service discount" class="h-32 object-contain" height="150" src="https://storage.googleapis.com/a1aa/image/81830740-270c-4bd1-b2b1-c4c687f4d41e.jpg" width="300" loading="lazy"/>
      </a>
      <a class="flex-shrink-0 w-full flex items-center justify-center bg-yellow-400 text-gray-900 text-xl font-semibold h-48" href="#">
-      <img alt="Ad 3 - Eco-friendly cleaning supplies" class="h-32 object-contain" height="150" src="https://storage.googleapis.com/a1aa/image/d58367c8-33b9-4fe8-91a0-65276accac23.jpg" width="300"/>
+      <img alt="Ad 3 - Eco-friendly cleaning supplies" class="h-32 object-contain" height="150" src="https://storage.googleapis.com/a1aa/image/d58367c8-33b9-4fe8-91a0-65276accac23.jpg" width="300" loading="lazy"/>
      </a>
      <a class="flex-shrink-0 w-full flex items-center justify-center bg-purple-600 text-white text-xl font-semibold h-48" href="#">
-      <img alt="Ad 4 - Professional cleaning team" class="h-32 object-contain" height="150" src="https://storage.googleapis.com/a1aa/image/a3f0ced0-22cd-4a42-c854-b8d80ee91333.jpg" width="300"/>
+      <img alt="Ad 4 - Professional cleaning team" class="h-32 object-contain" height="150" src="https://storage.googleapis.com/a1aa/image/a3f0ced0-22cd-4a42-c854-b8d80ee91333.jpg" width="300" loading="lazy"/>
      </a>
     </div>
     <!-- Navigation dots -->
@@ -132,7 +185,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
    </div>
    <div class="flex-1 max-w-md w-full">
-    <img alt="Nairobi woman offering cleaning services, smiling and holding cleaning tools" class="rounded-lg shadow-lg w-full object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/5d68d879-a8db-4621-803b-47cb1da1c237.jpg" width="600"/>
+    <img alt="Nairobi woman offering cleaning services, smiling and holding cleaning tools" class="rounded-lg shadow-lg w-full object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/5d68d879-a8db-4621-803b-47cb1da1c237.jpg" width="600" loading="lazy"/>
    </div>
   </section>
   <!-- Categories Section -->
@@ -151,49 +204,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    </h2>
    <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 w-full">
     <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="#">
-     <img alt="Woman cleaning a house interior" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/dfe7b658-8285-40f5-a7a5-d752d4fcedb0.jpg" width="80"/>
+     <img alt="Woman cleaning a house interior" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/dfe7b658-8285-40f5-a7a5-d752d4fcedb0.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       House Cleaning
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="#">
-     <img alt="Office cleaning with vacuum cleaner" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/84e7e69a-425f-42b1-d5d0-91d4ebc05f75.jpg" width="80"/>
+     <img alt="Office cleaning with vacuum cleaner" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/84e7e69a-425f-42b1-d5d0-91d4ebc05f75.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Office Cleaning
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="#">
-     <img alt="Carpet cleaning with brush" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/0d838c69-5cca-41bd-0a12-ce00ec7a9b4a.jpg" width="80"/>
+     <img alt="Carpet cleaning with brush" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/0d838c69-5cca-41bd-0a12-ce00ec7a9b4a.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Carpet Cleaning
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="#">
-     <img alt="Window cleaning with squeegee" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/7368237a-d9c0-4d6a-36d0-b6e0b7da3252.jpg" width="80"/>
+     <img alt="Window cleaning with squeegee" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/7368237a-d9c0-4d6a-36d0-b6e0b7da3252.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Window Cleaning
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="#">
-     <img alt="Deep cleaning with gloves and spray" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/2fd48ea9-81e6-4873-a8d4-b4260f545278.jpg" width="80"/>
+     <img alt="Deep cleaning with gloves and spray" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/2fd48ea9-81e6-4873-a8d4-b4260f545278.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Deep Cleaning
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="#">
-     <img alt="Post construction cleaning with broom" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/64f7fd81-fbba-4f8a-baf2-ce570f58ac1f.jpg" width="80"/>
+     <img alt="Post construction cleaning with broom" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/64f7fd81-fbba-4f8a-baf2-ce570f58ac1f.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Post Construction
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="#">
-     <img alt="Move in/out cleaning with mop" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/86199f60-ad0e-4660-a027-02d8cf6ad183.jpg" width="80"/>
+     <img alt="Move in/out cleaning with mop" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/86199f60-ad0e-4660-a027-02d8cf6ad183.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Move In/Out
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="#">
-     <img alt="Sanitization and disinfection services" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/b0fe3781-69cc-441f-fe86-b48fb2d6bf72.jpg" width="80"/>
+     <img alt="Sanitization and disinfection services" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/b0fe3781-69cc-441f-fe86-b48fb2d6bf72.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Sanitization
      </span>
@@ -216,7 +269,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    </h2>
    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
     <article class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition select-none">
-     <img alt="Tips for eco-friendly cleaning" class="w-full h-48 object-cover" src="https://storage.googleapis.com/a1aa/image/blog-eco-friendly-cleaning.jpg"/>
+     <img alt="Tips for eco-friendly cleaning" class="w-full h-48 object-cover" src="https://storage.googleapis.com/a1aa/image/blog-eco-friendly-cleaning.jpg" loading="lazy" width="128" height="80"/>
      <div class="p-4">
       <h3 class="text-xl font-semibold mb-2 text-gray-900">
        5 Tips for Eco-Friendly Cleaning at Home
@@ -230,7 +283,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      </div>
     </article>
     <article class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition select-none">
-     <img alt="Benefits of professional cleaning" class="w-full h-48 object-cover" src="https://storage.googleapis.com/a1aa/image/blog-professional-cleaning.jpg"/>
+     <img alt="Benefits of professional cleaning" class="w-full h-48 object-cover" src="https://storage.googleapis.com/a1aa/image/blog-professional-cleaning.jpg" loading="lazy" width="128" height="80"/>
      <div class="p-4">
       <h3 class="text-xl font-semibold mb-2 text-gray-900">
        Why Hire Professional Cleaning Services?
@@ -244,7 +297,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      </div>
     </article>
     <article class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition select-none">
-     <img alt="How to maintain a clean office" class="w-full h-48 object-cover" src="https://storage.googleapis.com/a1aa/image/blog-clean-office.jpg"/>
+     <img alt="How to maintain a clean office" class="w-full h-48 object-cover" src="https://storage.googleapis.com/a1aa/image/blog-clean-office.jpg" loading="lazy" width="128" height="80"/>
      <div class="p-4">
       <h3 class="text-xl font-semibold mb-2 text-gray-900">
        How to Maintain a Clean and Productive Office
@@ -262,21 +315,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-6 select-none">
    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
     <div class="text-xs text-center md:text-left">
-     © 2025 Nairobi Cleaning. All rights reserved.
+     © <span data-year>2026</span> Nairobi Cleaning. All rights reserved.
     </div>
     <div class="flex space-x-6 text-sm font-semibold">
-     <a class="hover:underline" href="privacy.html">
-      Privacy Policy
-     </a>
-     <a class="hover:underline" href="terms of services.html">
-      Terms of Service
-     </a>
-     <a class="hover:underline" href="contact.html">
-      Contact Us
-     </a>
-     <a class="hover:underline" href="about us.html">
-      About
-     </a>
+     <a class="hover:underline" href="privacy.html">Privacy Policy</a>
+     <a class="hover:underline" href="terms of services.html">Terms of Service</a>
+     <a class="hover:underline" href="contact.html">Contact Us</a>
+     <a class="hover:underline" href="about us.html">About</a>
     </div>
    </div>
   </footer>
@@ -477,7 +522,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      "bg-white rounded-lg shadow-lg overflow-hidden select-none";
 
     card.innerHTML = `
-      <img alt="Photo of ${cleaner.name}" class="w-full h-48 object-cover" src="${cleaner.image}" />
+      <img alt="Photo of ${cleaner.name}" class="w-full h-48 object-cover" src="${cleaner.image}" width="800" height="400" loading="lazy"/>
       <div class="p-6">
        <h3 class="text-xl font-semibold mb-2 text-gray-900">${cleaner.name}</h3>
        <p class="text-gray-700 mb-2">${cleaner.description}</p>
@@ -495,5 +540,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     grid.appendChild(card);
    });
   </script>
+   <script src="js/main.js"></script>
  </body>
 </html>

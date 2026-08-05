@@ -3,11 +3,60 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Cleaning Services Nairobi - Gallery</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta content="Browse the Reliable Cleaning Services Nairobi gallery - meet our trusted cleaners and see the house, office, carpet and window cleaning services we offer." name="description"/>
+  <meta content="Cleaning Services Nairobi - Gallery" property="og:title"/>
+  <meta content="Browse the Reliable Cleaning Services Nairobi gallery - meet our trusted cleaners and see the house, office, carpet and window cleaning services we offer." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Nairobi Cleaning" property="og:site_name"/>
+  <meta content="https://storage.googleapis.com/a1aa/image/f778d151-bc04-47f7-9327-93d117397242.jpg" property="og:image"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Cleaning Services Nairobi - Gallery" name="twitter:title"/>
+  <meta content="Browse the Reliable Cleaning Services Nairobi gallery - meet our trusted cleaners and see the house, office, carpet and window cleaning services we offer." name="twitter:description"/>
+  <meta content="https://storage.googleapis.com/a1aa/image/f778d151-bc04-47f7-9327-93d117397242.jpg" name="twitter:image"/>
+  <meta content="#0d9488" name="theme-color"/>
+  <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="manifest.json" rel="manifest"/>
+
+  <link href="css/tailwind.css" rel="stylesheet"/>
   <link
    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
    rel="stylesheet"
   />
+  <!-- LocalBusiness schema for local search -->
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nairobi Cleaning",
+    "description": "Professional, trustworthy and affordable cleaning services in Nairobi - house, office, carpet, window and deep cleaning.",
+    "image": "https://storage.googleapis.com/a1aa/image/f778d151-bc04-47f7-9327-93d117397242.jpg",
+    "telephone": "+254700123456",
+    "email": "info@reliablecleaning.co.ke",
+    "priceRange": "KES",
+    "address": {
+     "@type": "PostalAddress",
+     "addressLocality": "Nairobi",
+     "addressCountry": "KE"
+    },
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": -1.2921,
+     "longitude": 36.8219
+    },
+    "areaServed": "Nairobi",
+    "openingHoursSpecification": {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+     "opens": "08:00",
+     "closes": "18:00"
+    },
+    "sameAs": [
+     "https://www.facebook.com/reliablecleaningnairobi",
+     "https://twitter.com/cleaningnairobi"
+    ]
+   }
+  </script>
   <!-- Vercel Speed Insights -->
   <script type="module">
    import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@2.0.0/dist/index.mjs';
@@ -16,14 +65,28 @@
  </head>
  <body class="bg-gradient-to-r from-green-200 via-cyan-200 to-blue-300 min-h-screen text-gray-900 font-sans">
   <header class="bg-white bg-opacity-80 shadow sticky top-0 z-30">
-   <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row md:items-center md:justify-between">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-3">
     <h1 class="text-3xl font-bold mb-3 md:mb-0">Reliable Cleaning Services Nairobi</h1>
-    <nav class="space-x-4 text-sm font-semibold">
+    <nav class="hidden md:block space-x-4 text-sm font-semibold">
      <a href="index.html" class="hover:underline">Home</a>
      <a href="#categories" class="hover:underline">Categories</a>
      <a href="#gallery" class="hover:underline">Gallery</a>
      <a href="contact.html" class="hover:underline">Contact</a>
     </nav>
+   <button aria-expanded="false" aria-label="Toggle dark mode" class="text-gray-900 text-xl focus:outline-none ml-3" data-dark-toggle type="button">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun hidden"></i>
+   </button>
+   <button aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden text-gray-900 text-xl focus:outline-none" data-nav-toggle="#mobileMenu" type="button">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-times hidden"></i>
+   </button>
+   <div class="hidden md:hidden w-full pt-3 pb-1" data-nav-menu id="mobileMenu">
+    <a class="block py-2 text-sm font-semibold hover:underline" href="index.html">Home</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="#categories">Categories</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="#gallery">Gallery</a>
+    <a class="block py-2 text-sm font-semibold hover:underline" href="contact.html">Contact</a>
+   </div>
    </div>
   </header>
 
@@ -55,7 +118,7 @@
     </div>
    </div>
    <div class="md:w-1/2 max-w-sm rounded-lg shadow-lg overflow-hidden">
-    <img
+    <img data-lightbox="true"
      src="https://storage.googleapis.com/a1aa/image/f778d151-bc04-47f7-9327-93d117397242.jpg"
      alt="Smiling cleaning woman in blue shirt and yellow apron holding cleaning tools"
      class="w-full h-auto object-cover"
@@ -76,7 +139,7 @@
     <div
      class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
     >
-     <img
+     <img data-lightbox="true"
       src="https://storage.googleapis.com/a1aa/image/35d1f6e9-0f68-451d-70f7-fbcbf8f974f9.jpg"
       alt="Person cleaning a house interior"
       class="mb-2 rounded"
@@ -89,7 +152,7 @@
     <div
      class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
     >
-     <img
+     <img data-lightbox="true"
       src="https://storage.googleapis.com/a1aa/image/99c5f828-5b20-4d6c-9138-3b6f3e81a737.jpg"
       alt="Person cleaning an office floor"
       class="mb-2 rounded"
@@ -102,7 +165,7 @@
     <div
      class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
     >
-     <img
+     <img data-lightbox="true"
       src="https://storage.googleapis.com/a1aa/image/34f94dd5-84ed-4337-4085-f306a2396c49.jpg"
       alt="Carpet cleaning equipment on carpet"
       class="mb-2 rounded"
@@ -115,7 +178,7 @@
     <div
      class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
     >
-     <img
+     <img data-lightbox="true"
       src="https://storage.googleapis.com/a1aa/image/218c59c1-ce5b-4f37-0995-3c28080ccd0d.jpg"
       alt="Window cleaning squeegee on glass"
       class="mb-2 rounded"
@@ -128,7 +191,7 @@
     <div
      class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
     >
-     <img
+     <img data-lightbox="true"
       src="https://storage.googleapis.com/a1aa/image/2c6924df-c3ab-4092-9793-a9d4af4e91e1.jpg"
       alt="Hands wearing yellow gloves cleaning surface"
       class="mb-2 rounded"
@@ -141,7 +204,7 @@
     <div
      class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
     >
-     <img
+     <img data-lightbox="true"
       src="https://storage.googleapis.com/a1aa/image/ee4968d0-4fa0-4d63-53d1-27e8f7169275.jpg"
       alt="Post construction cleaning with broom"
       class="mb-2 rounded"
@@ -154,7 +217,7 @@
     <div
      class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
     >
-     <img
+     <img data-lightbox="true"
       src="https://storage.googleapis.com/a1aa/image/4d6bbfe6-4dec-465d-2157-4a2f8de6f3c8.jpg"
       alt="Person cleaning while moving in or out"
       class="mb-2 rounded"
@@ -167,7 +230,7 @@
     <div
      class="bg-white bg-opacity-30 rounded-lg p-3 flex flex-col items-center shadow-lg cursor-pointer hover:bg-white hover:bg-opacity-50 transition"
     >
-     <img
+     <img data-lightbox="true"
       src="https://storage.googleapis.com/a1aa/image/9a114cd9-4eec-44b2-7400-54b1cae8153a.jpg"
       alt="Sanitization of room with spray"
       class="mb-2 rounded"
@@ -219,7 +282,9 @@
   </section>
 
   <footer class="bg-gray-900 text-gray-300 text-center py-6 mt-12">
-   <p class="text-sm">© 2024 Reliable Cleaning Services Nairobi. All rights reserved.</p>
+   <p class="text-sm">
+    © <span data-year>2026</span> Reliable Cleaning Services Nairobi. All rights reserved.
+   </p>
   </footer>
 
   <script>
@@ -441,7 +506,7 @@
      "bg-white rounded-lg shadow p-4 flex flex-col items-center hover:shadow-lg transition";
 
     card.innerHTML = `
-      <img src="${service.img}" alt="${service.alt}" loading="lazy" class="w-40 h-40 object-cover rounded-md mb-3" width="160" height="160" />
+      <img data-lightbox="true" src="${service.img}" alt="${service.alt}" loading="lazy" class="w-40 h-40 object-cover rounded-md mb-3" width="160" height="160" />
       <p class="font-semibold text-center text-gray-900 mb-1">${service.name}</p>
       <p class="text-xs text-gray-700 mb-1 text-center px-2">${service.description}</p>
       <p class="text-xs text-gray-600 flex items-center justify-center space-x-1 mb-1">
@@ -456,5 +521,6 @@
     galleryGrid.appendChild(card);
    });
   </script>
+   <script src="js/main.js"></script>
  </body>
 </html>
