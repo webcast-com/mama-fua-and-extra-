@@ -174,6 +174,41 @@ It already has some nice touches: Vercel Speed Insights, Google Tag Manager (on
        card no longer 404s); `nairobi.html` used absolute `/images/jane.jpg` → now
        relative `images/jane.jpg`.
 
+### ✅ Phase 3 — DONE (2026-08-05)
+
+10. **Working contact/booking form (`contact.html`)** — Name, phone, service, preferred
+    date and details; submitting opens WhatsApp with the whole booking prefilled (no
+    backend needed, works immediately). Logic in `js/main.js`.
+
+11. **Floating WhatsApp button (all 11 pages)** — fixed green button bottom-right with a
+    prefilled "Hello Nairobi Cleaning!" message. Added via `js/main.js`, so it appears
+    everywhere with zero per-page markup.
+
+12. **Gallery lightbox (`gallery.html` + `tx.html`)** — click any photo for a full-size
+    dark overlay; close with ✕, click-outside, or Esc. Every image on both pages got
+    `data-lightbox`; the shared handler also covers the JS-generated gallery cards.
+
+13. **Testimonials + FAQ (`services.html`)** — 3 client testimonials and a 5-question
+    FAQ (accordion), plus **FAQPage JSON-LD** in the head so Google can show rich
+    results for the Q&As.
+
+14. **Booking estimate calculator (`contact.html`)** — home size × frequency (with
+    weekly/bi-weekly/monthly discounts) + extras (deep, carpet, windows, fridge) → live
+    KSh estimate, with a "Book this estimate" WhatsApp button.
+
+15. **Blog search + category filter (`more blog.html`)** — live search box and category
+    chips (Kitchen, Carpets & Upholstery, Windows, Deep Cleaning, Eco-Friendly,
+    Organizing & Schedules); all 12 articles tagged with categories, with a
+    "no results" message.
+
+16. **Dark mode toggle (all pages with a navbar)** — 🌙/☀️ button in every nav (synced
+    via the shared templates), respects system preference, remembers the choice in
+    `localStorage`, and a shared stylesheet darkens the site's backgrounds, cards and
+    text. `tx.html` (no nav) still follows the system preference.
+
+**All Phase 3 code lives in `js/main.js` (single shared file, each feature guarded so it
+only activates where its markup exists). Nothing was deleted.**
+
 ### ⚠️ Newly noticed (pre-existing, not touched — for Phase 2/3)
 - `contact.html` footer: one `<div>` is missing its closing tag before `</footer>`.
 - `nairobi.html` (in the "Book Now / Our Services / Contact Us" area): `<button>`

@@ -28,6 +28,40 @@
     font-family: "Inter", sans-serif;
    }
   </style>
+  <!-- FAQ rich results -->
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "How much does house cleaning cost in Nairobi?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A standard one-off house clean starts at around KSh 1,500 for a studio and KSh 2,000 for a 1-bedroom, depending on size and extras. Use the estimate calculator on our contact page or message us on WhatsApp for an exact quote." }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you bring your own cleaning products and equipment?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our cleaners arrive with eco-friendly products and professional equipment. If you prefer we use your own products, just let us know when booking." }
+     },
+     {
+      "@type": "Question",
+      "name": "Are your cleaners background-checked and trained?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every Nairobi Cleaning team member is vetted, trained and experienced in residential and commercial cleaning, and we stand behind their work with a satisfaction guarantee." }
+     },
+     {
+      "@type": "Question",
+      "name": "Which areas do you cover?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We serve Nairobi and its environs — including Westlands, Kilimani, South B, Eastleigh, Kasarani, Ruiru and more. Message us on WhatsApp to confirm availability in your area." }
+     },
+     {
+      "@type": "Question",
+      "name": "How do I book and pay?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Book through the form on our contact page or directly on WhatsApp. We confirm the date and quote first, and you can pay by M-PESA or cash after the service." }
+     }
+    ]
+   }
+  </script>
   <!-- Vercel Speed Insights -->
   <script type="module">
    import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@2.0.0/dist/index.mjs';
@@ -60,6 +94,10 @@
      <a class="hover:underline" href="blog.html">Blog</a>
     </li>
    </ul>
+   <button aria-expanded="false" aria-label="Toggle dark mode" class="text-white text-xl focus:outline-none ml-3" data-dark-toggle type="button">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun hidden"></i>
+   </button>
    <button aria-expanded="false" aria-label="Toggle navigation menu" class="md:hidden text-white text-xl focus:outline-none" data-nav-toggle="#mobileMenu" type="button">
     <i class="fas fa-bars"></i>
     <i class="fas fa-times hidden"></i>
@@ -174,6 +212,62 @@
     </div>
    </div>
   </section>
+  <!-- Testimonials -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+   <h2 class="text-3xl font-bold text-gray-900 mb-8 select-none text-center">
+    What Our Clients Say
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+     <p class="text-gray-700 mb-4 italic">
+      "The team did a fantastic job on our 3-bedroom apartment. Spotless results and very professional — they even cleaned the windows without being asked!"
+     </p>
+     <p class="mt-auto font-semibold text-gray-900">Jane W. · Westlands</p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+     <p class="text-gray-700 mb-4 italic">
+      "We book a weekly office clean and it's been seamless. Reliable, thorough, and always on time. Highly recommend."
+     </p>
+     <p class="mt-auto font-semibold text-gray-900">Peter M. · Upper Hill</p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+     <p class="text-gray-700 mb-4 italic">
+      "Booked on WhatsApp, got a quote in minutes, and the cleaner arrived exactly on time. The deep clean was worth every shilling."
+     </p>
+     <p class="mt-auto font-semibold text-gray-900">Amina K. · Eastleigh</p>
+    </div>
+   </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="max-w-3xl mx-auto px-6 pb-16">
+   <h2 class="text-3xl font-bold text-gray-900 mb-8 select-none text-center">
+    Frequently Asked Questions
+   </h2>
+   <div class="space-y-3">
+    <details class="bg-white rounded-lg shadow p-5">
+     <summary class="font-semibold text-gray-900 cursor-pointer">How much does house cleaning cost in Nairobi?</summary>
+     <p class="text-gray-700 mt-3 text-sm">A standard one-off house clean starts at around KSh 1,500 for a studio and KSh 2,000 for a 1-bedroom, depending on size and extras. Use the estimate calculator on our contact page or message us on WhatsApp for an exact quote.</p>
+    </details>
+    <details class="bg-white rounded-lg shadow p-5">
+     <summary class="font-semibold text-gray-900 cursor-pointer">Do you bring your own cleaning products and equipment?</summary>
+     <p class="text-gray-700 mt-3 text-sm">Yes. Our cleaners arrive with eco-friendly products and professional equipment. If you prefer we use your own products, just let us know when booking.</p>
+    </details>
+    <details class="bg-white rounded-lg shadow p-5">
+     <summary class="font-semibold text-gray-900 cursor-pointer">Are your cleaners background-checked and trained?</summary>
+     <p class="text-gray-700 mt-3 text-sm">Yes. Every Nairobi Cleaning team member is vetted, trained and experienced in residential and commercial cleaning, and we stand behind their work with a satisfaction guarantee.</p>
+    </details>
+    <details class="bg-white rounded-lg shadow p-5">
+     <summary class="font-semibold text-gray-900 cursor-pointer">Which areas do you cover?</summary>
+     <p class="text-gray-700 mt-3 text-sm">We serve Nairobi and its environs — including Westlands, Kilimani, South B, Eastleigh, Kasarani, Ruiru and more. Message us on WhatsApp to confirm availability in your area.</p>
+    </details>
+    <details class="bg-white rounded-lg shadow p-5">
+     <summary class="font-semibold text-gray-900 cursor-pointer">How do I book and pay?</summary>
+     <p class="text-gray-700 mt-3 text-sm">Book through the form on our contact page or directly on WhatsApp. We confirm the date and quote first, and you can pay by M-PESA or cash after the service.</p>
+    </details>
+   </div>
+  </section>
+
   <!-- Footer -->
   <footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-6 select-none mt-auto">
    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
