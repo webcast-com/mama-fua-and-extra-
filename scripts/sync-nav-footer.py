@@ -18,7 +18,6 @@ TPL = "templates"
 # template key -> filename
 NAV_FILES = {
     "cleaning": "cleaning-nav.html",
-    "music": "music-nav.html",
     "gallery": "gallery-nav.html",
     "blog": "blog-nav.html",
 }
@@ -47,8 +46,8 @@ PAGES = {
                              "params": {"BRAND": "Nairobi Cleaning", "MARGIN": " mt-auto"}},
     "terms of services.html": {"nav": "cleaning", "footer": "cleaning", "current": "terms of services.html",
                                "params": {"BRAND": "Nairobi Cleaning", "MARGIN": " mt-auto"}},
-    "index.html":           {"nav": "music", "footer": "cleaning",
-                             "params": {"BRAND": "U&I", "MARGIN": ""}},
+    "index.html":           {"nav": "cleaning", "footer": "cleaning", "current": "index.html",
+                             "params": {"BRAND": "Nairobi Cleaning", "MARGIN": ""}},
     "gallery.html":         {"nav": "gallery", "footer": "simple",
                              "params": {"TITLE": "Reliable Cleaning Services Nairobi", "BRAND": "Reliable Cleaning Services Nairobi", "MARGIN": "mt-12"}},
     "more blog.html":       {"nav": "blog", "footer": "simple",

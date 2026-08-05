@@ -249,6 +249,30 @@ only activates where its markup exists). Nothing was deleted.**
       `js/main.js`: text + link to Privacy Policy, Accept / Decline buttons, choice
       remembered in `localStorage`. Sits alongside the existing Google Tag Manager tag.
 
+### ✅ Branding finalized — music removed, cleaning leads (2026-08-05)
+
+Per your instruction ("remove music information, replace with cleaning info"), the site
+is now **single-brand: Nairobi Cleaning**.
+
+- **`index.html` rewritten as the cleaning homepage** — all music content (U&I
+  Connection branding, "New songs / Artists / Videos / Team / Categories" menu, music
+  hero cards, the Nairobi/Githurai/Eldoret/… music-category grid, music images and the
+  Organization schema) is **gone**, replaced with:
+  - Cleaning hero ("Professional Cleaning Services in Nairobi") with a WhatsApp CTA
+  - Residential / Commercial / Eco-Friendly feature cards
+  - "Our Cleaning Services" grid (House, Office, Carpet, Window, Deep, Sanitization,
+    Move In/Out, Post-Construction) linking to `services.html`
+  - "Why Choose Nairobi Cleaning?" (verified, eco-friendly, flexible, affordable)
+  - Closing CTA band (book / meet our cleaners / cleaning tips)
+  - `LocalBusiness` JSON-LD, cleaning meta/OG tags, cleaning nav + footer
+- **Removed** the unused `templates/music-nav.html`; `scripts/sync-nav-footer.py` now
+  maps `index.html` to the cleaning nav (verified idempotent — re-sync keeps it), and
+  `scripts/phase1.py`'s `index.html` entry uses cleaning metadata.
+- **Grep-verified**: no "U&I / music / artist / song / vinyl / genre" references remain
+  in any site file.
+- CSS rebuilt (`npm run build:css`) to cover the new homepage classes — 100% coverage
+  verified. 0 broken links, tags balanced, all pages serve 200.
+
 ### ⚠️ Newly noticed (pre-existing, not touched — for Phase 2/3)
 - `contact.html` footer: one `<div>` is missing its closing tag before `</footer>`.
 - `nairobi.html` (in the "Book Now / Our Services / Contact Us" area): `<button>`

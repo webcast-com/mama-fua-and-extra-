@@ -10,11 +10,11 @@ THEME_COLOR = "#0d9488"
 # file -> (meta description, og image, site name, mobile nav links [(href,label),...])
 PAGES = {
     "index.html": (
-        "U&I Connection - discover new music, meet the artists and explore genres. "
-        "Browse Nairobi's hottest music categories: Nairobi, Githurai, Eldoret, Nakuru and more.",
-        MUSIC_OG_IMG, "U&I Connection",
-        [("#", "Home"), ("#", "New songs"), ("#", "Artists"), ("#", "Videos"),
-         ("more blog.html", "Blog"), ("#", "Team"), ("#", "Categories")],
+        "Nairobi Cleaning - professional, trustworthy and affordable cleaning services in "
+        "Nairobi. House, office, carpet, window and deep cleaning. Book on WhatsApp.",
+        CLEANING_OG_IMG, "Nairobi Cleaning",
+        [("index.html", "Home"), ("services.html", "Services"), ("about us.html", "About Us"),
+         ("contact.html", "Contact"), ("blog.html", "Blog")],
     ),
     "about us.html": (
         "Learn about Nairobi Cleaning - a trusted provider of professional cleaning services "
