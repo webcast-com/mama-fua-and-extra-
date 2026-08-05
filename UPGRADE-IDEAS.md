@@ -209,6 +209,46 @@ It already has some nice touches: Vercel Speed Insights, Google Tag Manager (on
 **All Phase 3 code lives in `js/main.js` (single shared file, each feature guarded so it
 only activates where its markup exists). Nothing was deleted.**
 
+### ✅ Phase 4 — DONE (2026-08-05)
+
+17. **Prebuilt CSS instead of the Tailwind CDN (biggest performance win)**
+    - Added `tailwind.config.js` (content scans all pages, templates and JS) and
+      `css/input.css`; built `css/tailwind.css` (~33 KB minified) with Tailwind v3.4.17
+      + the typography plugin (`prose` on blog.html keeps its styling).
+    - Every page now loads `<link href="css/tailwind.css">` instead of the
+      `cdn.tailwindcss.com` script — no more runtime compilation in the browser, no
+      console warning, faster first paint, works offline.
+    - Build is reproducible: `npm install && npm run build:css` (`package.json` +
+      `package-lock.json` committed).
+    - Verified 100% class coverage: every Tailwind class used in HTML/JS exists in the
+      generated CSS (Font Awesome classes are handled by the FA stylesheet).
+
+18. **LocalBusiness JSON-LD (local SEO)**
+    - Added `LocalBusiness` schema (name, phone, email, Nairobi address + geo,
+      opening hours, area served, Facebook/Twitter) to all 10 cleaning pages.
+    - `index.html` (music page) got an `Organization` schema instead.
+    - `services.html` also keeps its Phase 3 `FAQPage` schema (2 blocks, both valid).
+
+19. **Image audit — every image fixed**
+    - Added `loading="lazy"` to every below-the-fold image on every page (the
+      first/hero image stays eager for LCP).
+    - Added missing `width`/`height` to the nairobi.html blog thumbnails and the
+      JS-generated cleaner card template.
+    - Result: **0 images missing alt/width/height/loading** across the site.
+
+20. **PWA basics (installable + offline)**
+    - `manifest.json` (standalone, theme color, icons) linked on all pages.
+    - `images/icon-192.png` + `images/icon-512.png` (same brand icon).
+    - `sw.js` at the **site root** (so its scope covers the whole site — important!)
+      with a cache-first strategy for same-origin GETs, offline fallback to the home
+      page, and automatic cache cleanup. Registered from `js/main.js` (https/localhost
+      only, non-fatal on failure).
+
+21. **Cookie-consent banner**
+    - Lightweight non-blocking banner (bottom-left) on all pages, added via
+      `js/main.js`: text + link to Privacy Policy, Accept / Decline buttons, choice
+      remembered in `localStorage`. Sits alongside the existing Google Tag Manager tag.
+
 ### ⚠️ Newly noticed (pre-existing, not touched — for Phase 2/3)
 - `contact.html` footer: one `<div>` is missing its closing tag before `</footer>`.
 - `nairobi.html` (in the "Book Now / Our Services / Contact Us" area): `<button>`

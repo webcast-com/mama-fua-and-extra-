@@ -262,6 +262,74 @@
     apply();
   }
 
+  /* ---------- 9. Service worker (PWA offline) ---------- */
+  function initServiceWorker() {
+    if (!("serviceWorker" in navigator)) return;
+    if (location.protocol !== "https:" &&
+        location.hostname !== "localhost" && location.hostname !== "127.0.0.1") return;
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("sw.js").catch(function () { /* non-fatal */ });
+    });
+  }
+
+  /* ---------- 10. Cookie consent banner ---------- */
+  function initCookieBanner() {
+    var choice = null;
+    try { choice = localStorage.getItem("cookie-consent"); } catch (e) { /* ignore */ }
+    if (choice) return;
+
+    var bar = document.createElement("div");
+    bar.id = "cookie-banner";
+    bar.setAttribute("role", "dialog");
+    bar.setAttribute("aria-label", "Cookie notice");
+    bar.style.cssText =
+      "position:fixed;bottom:16px;left:16px;right:16px;z-index:9998;max-width:420px;" +
+      "background:#111827;color:#f9fafb;padding:14px 16px;border-radius:12px;" +
+      "box-shadow:0 8px 24px rgba(0,0,0,.35);font-size:13px;line-height:1.45;";
+    var text = document.createElement("p");
+    text.style.margin = "0 0 10px 0";
+    text.innerHTML =
+      "We use cookies to improve your experience and analyze site traffic. " +
+      '<a href="privacy.html" style="color:#6ee7b7;text-decoration:underline">Privacy Policy</a>.';
+    var row = document.createElement("div");
+    row.style.display = "flex";
+    row.style.gap = "8px";
+
+    function done() {
+      if (bar.parentNode) bar.parentNode.removeChild(bar);
+    }
+    function accept() {
+      try { localStorage.setItem("cookie-consent", "accepted"); } catch (e) { /* ignore */ }
+      done();
+    }
+    function decline() {
+      try { localStorage.setItem("cookie-consent", "declined"); } catch (e) { /* ignore */ }
+      done();
+    }
+
+    var ok = document.createElement("button");
+    ok.type = "button";
+    ok.textContent = "Accept";
+    ok.style.cssText =
+      "background:#10b981;color:#fff;border:none;border-radius:8px;padding:6px 14px;" +
+      "font-weight:600;cursor:pointer;flex:1;";
+    ok.addEventListener("click", accept);
+
+    var no = document.createElement("button");
+    no.type = "button";
+    no.textContent = "Decline";
+    no.style.cssText =
+      "background:transparent;color:#d1d5db;border:1px solid #4b5563;border-radius:8px;" +
+      "padding:6px 14px;font-weight:600;cursor:pointer;flex:1;";
+    no.addEventListener("click", decline);
+
+    row.appendChild(ok);
+    row.appendChild(no);
+    bar.appendChild(text);
+    bar.appendChild(row);
+    document.body.appendChild(bar);
+  }
+
   /* ---------- init ---------- */
   function init() {
     initMobileMenu();
@@ -272,6 +340,8 @@
     initBookingForm();
     initEstimator();
     initBlogFilter();
+    initCookieBanner();
+    initServiceWorker();
   }
 
   if (document.readyState === "loading") {

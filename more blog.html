@@ -18,10 +18,44 @@
   <meta content="#0d9488" name="theme-color"/>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="manifest.json" rel="manifest"/>
 
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <link href="css/tailwind.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <!-- LocalBusiness schema for local search -->
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nairobi Cleaning",
+    "description": "Professional, trustworthy and affordable cleaning services in Nairobi - house, office, carpet, window and deep cleaning.",
+    "image": "https://storage.googleapis.com/a1aa/image/f778d151-bc04-47f7-9327-93d117397242.jpg",
+    "telephone": "+254700123456",
+    "email": "info@reliablecleaning.co.ke",
+    "priceRange": "KES",
+    "address": {
+     "@type": "PostalAddress",
+     "addressLocality": "Nairobi",
+     "addressCountry": "KE"
+    },
+    "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": -1.2921,
+     "longitude": 36.8219
+    },
+    "areaServed": "Nairobi",
+    "openingHoursSpecification": {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+     "opens": "08:00",
+     "closes": "18:00"
+    },
+    "sameAs": [
+     "https://www.facebook.com/reliablecleaningnairobi",
+     "https://twitter.com/cleaningnairobi"
+    ]
+   }
+  </script>
   <!-- Vercel Speed Insights -->
   <script type="module">
    import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@2.0.0/dist/index.mjs';

@@ -18,9 +18,9 @@
   <meta content="#0d9488" name="theme-color"/>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
   <link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="manifest.json" rel="manifest"/>
 
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <link href="css/tailwind.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&amp;display=swap" rel="stylesheet"/>
   <style>
@@ -28,6 +28,16 @@
       font-family: 'Inter', sans-serif;
     }
   </style>
+  <!-- Organization schema -->
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "U&I Connection",
+    "description": "U&I Connection - discover new music, meet the artists and explore Kenyan music scenes and entertainment categories.",
+    "image": "https://storage.googleapis.com/a1aa/image/d9ee8944-dee4-4dc9-3558-77e48386c4b2.jpg"
+   }
+  </script>
   <!-- Vercel Speed Insights -->
   <script type="module">
    import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@2.0.0/dist/index.mjs';
@@ -93,7 +103,7 @@
    </div>
    <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0">
     <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-6 flex-1 flex flex-col items-center text-center shadow-lg hover:bg-opacity-30 transition cursor-pointer select-none">
-     <img alt="Headphones with music notes floating around" class="mb-4 rounded" height="100" src="https://storage.googleapis.com/a1aa/image/d9ee8944-dee4-4dc9-3558-77e48386c4b2.jpg" width="100"/>
+     <img alt="Headphones with music notes floating around" class="mb-4 rounded" height="100" src="https://storage.googleapis.com/a1aa/image/d9ee8944-dee4-4dc9-3558-77e48386c4b2.jpg" width="100" loading="lazy"/>
      <h2 class="text-xl font-semibold mb-2">
       Discover New Music
      </h2>
@@ -102,7 +112,7 @@
      </p>
     </div>
     <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-6 flex-1 flex flex-col items-center text-center shadow-lg hover:bg-opacity-30 transition cursor-pointer select-none">
-     <img alt="Microphone with sound waves" class="mb-4 rounded" height="100" src="https://storage.googleapis.com/a1aa/image/6313fd7a-ce7a-4a7c-c2d0-756178e66cdf.jpg" width="100"/>
+     <img alt="Microphone with sound waves" class="mb-4 rounded" height="100" src="https://storage.googleapis.com/a1aa/image/6313fd7a-ce7a-4a7c-c2d0-756178e66cdf.jpg" width="100" loading="lazy"/>
      <h2 class="text-xl font-semibold mb-2">
       Meet the Artists
      </h2>
@@ -111,7 +121,7 @@
      </p>
     </div>
     <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-6 flex-1 flex flex-col items-center text-center shadow-lg hover:bg-opacity-30 transition cursor-pointer select-none">
-     <img alt="Music notes and vinyl record" class="mb-4 rounded" height="100" src="https://storage.googleapis.com/a1aa/image/9a2b0bad-6b63-4657-9dd5-afa96c87b0c5.jpg" width="100"/>
+     <img alt="Music notes and vinyl record" class="mb-4 rounded" height="100" src="https://storage.googleapis.com/a1aa/image/9a2b0bad-6b63-4657-9dd5-afa96c87b0c5.jpg" width="100" loading="lazy"/>
      <h2 class="text-xl font-semibold mb-2">
       Explore Genres
      </h2>
@@ -131,121 +141,121 @@
    </p>
    <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 max-w-6xl w-full">
     <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="nairobi.html">
-     <img alt="Pop singer performing on stage with microphone and lights" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/c5212bff-d7c5-4b88-14e7-57c4646e0aa8.jpg" width="80"/>
+     <img alt="Pop singer performing on stage with microphone and lights" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/c5212bff-d7c5-4b88-14e7-57c4646e0aa8.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Nairobi 
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="gallery.html">
-     <img alt="Silhouette of a guitar against an orange sunset background" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/83abac8d-13a6-4fb1-a584-5d774b1cc551.jpg" width="80"/>
+     <img alt="Silhouette of a guitar against an orange sunset background" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/83abac8d-13a6-4fb1-a584-5d774b1cc551.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Githurai
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="tx.html">
-     <img alt="Hip hop artist wearing sunglasses and chains performing" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="80"/>
+     <img alt="Hip hop artist wearing sunglasses and chains performing" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Eldoret
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="tx.html">
-     <img alt="Jazz saxophonist playing on stage with purple lighting" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/a1dd48c1-6ddc-468b-7b6d-d5e730f558fe.jpg" width="80"/>
+     <img alt="Jazz saxophonist playing on stage with purple lighting" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/a1dd48c1-6ddc-468b-7b6d-d5e730f558fe.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Nakuru
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="https://proweb-cleaners.netlify.app/gallery">
-     <img alt="Classical violinist playing violin in black and white" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="80"/>
+     <img alt="Classical violinist playing violin in black and white" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Classical
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="tx.html">
-     <img alt="Electronic music setup with neon lights and speakers" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/950f1508-a639-400a-bce3-28dd81c8e221.jpg" width="80"/>
+     <img alt="Electronic music setup with neon lights and speakers" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/950f1508-a639-400a-bce3-28dd81c8e221.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Extra's 
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="gallery.html">
-     <img alt="Country singer wearing a hat and playing guitar on stage" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="80"/>
+     <img alt="Country singer wearing a hat and playing guitar on stage" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Mombasa
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="https://proweb-cleaners.netlify.app/gallery">
-     <img alt="Reggae artist singing with microphone wearing sunglasses" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="80"/>
+     <img alt="Reggae artist singing with microphone wearing sunglasses" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Kisumu 
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="gallery.html">
-     <img alt="Blues guitarist playing electric guitar on stage" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="80"/>
+     <img alt="Blues guitarist playing electric guitar on stage" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Kikuyu Town
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="nairobi.html">
-     <img alt="Metal band performing live with electric guitars and drums" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="80"/>
+     <img alt="Metal band performing live with electric guitars and drums" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Machakos
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="https://proweb-cleaners.netlify.app/gallery">
-     <img alt="Folk singer playing acoustic guitar outdoors" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/2efbb446-081f-41ac-73ee-09b54f75bf37.jpg" width="80"/>
+     <img alt="Folk singer playing acoustic guitar outdoors" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/2efbb446-081f-41ac-73ee-09b54f75bf37.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Embakasi
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="https://proweb-cleaners.netlify.app/gallery">
-     <img alt="Dance music DJ with headphones and turntables" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/2b211fb0-6e1c-4e74-2d5f-ecb5525250c9.jpg" width="80"/>
+     <img alt="Dance music DJ with headphones and turntables" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/2b211fb0-6e1c-4e74-2d5f-ecb5525250c9.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Thika
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="tx.html">
-     <img alt="Ambient music with relaxing nature background" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/3875b025-6549-424c-9e2c-27faa172215a.jpg" width="80"/>
+     <img alt="Ambient music with relaxing nature background" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/3875b025-6549-424c-9e2c-27faa172215a.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Kangemi
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="nairobi.html">
-     <img alt="Latin music dancers performing on stage" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/c5212bff-d7c5-4b88-14e7-57c4646e0aa8.jpg" width="80"/>
+     <img alt="Latin music dancers performing on stage" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/c5212bff-d7c5-4b88-14e7-57c4646e0aa8.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Nairobi west
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="nairobi.html">
-     <img alt="Punk rock band performing live" class="mb-3 rounded" height="80" src="images/12.jpg" width="80"/>
+     <img alt="Punk rock band performing live" class="mb-3 rounded" height="80" src="images/12.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Sleep overs
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="https://proweb-cleaners.netlify.app/gallery">
-     <img alt="Soul singer performing with microphone" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="80"/>
+     <img alt="Soul singer performing with microphone" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/efb31059-b807-4a63-2ab2-6ba12da96370.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Meru
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="tx.html">
-     <img alt="R&B artist performing on stage" class="mb-3 rounded" height="80" src="images/2.jpg" width="80"/>
+     <img alt="R&B artist performing on stage" class="mb-3 rounded" height="80" src="images/2.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Kibera
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-30 transition select-none" href="nairobi.html">
-     <img alt="Gospel choir singing in church" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/c5212bff-d7c5-4b88-14e7-57c4646e0aa8.jpg" width="80"/>
+     <img alt="Gospel choir singing in church" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/c5212bff-d7c5-4b88-14e7-57c4646e0aa8.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Ngong
      </span>
     </a>
     <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="tx.html">
-     <img alt="K-Pop group performing on stage" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/3875b025-6549-424c-9e2c-27faa172215a.jpg" width="80"/>
+     <img alt="K-Pop group performing on stage" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/3875b025-6549-424c-9e2c-27faa172215a.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       Ruiru
      </span>
     </a>
      <a class="flex flex-col items-center bg-white bg-opacity-30 backdrop-blur-md rounded-lg p-4 shadow-lg hover:bg-opacity-40 transition select-none" href="tx.html">
-     <img alt="K-Pop group performing on stage" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/3875b025-6549-424c-9e2c-27faa172215a.jpg" width="80"/>
+     <img alt="K-Pop group performing on stage" class="mb-3 rounded" height="80" src="https://storage.googleapis.com/a1aa/image/3875b025-6549-424c-9e2c-27faa172215a.jpg" width="80" loading="lazy"/>
      <span class="text-white font-semibold">
       kasarani
      </span>
